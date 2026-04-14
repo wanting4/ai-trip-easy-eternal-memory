@@ -1,0 +1,3 @@
+# Speed up uploads; not needed for static trip page at repo root
+platform/web/node_modules
+platform/web/.next
