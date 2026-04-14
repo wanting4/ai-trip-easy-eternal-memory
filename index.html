@@ -1,0 +1,1978 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="doc_title">👑 Wanting and Qingyue公主的夏威夷计划</title>
+<style>
+:root {
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Heiti SC", sans-serif;
+  --color-background-primary: #ffffff;
+  --color-background-secondary: #f5f5f7;
+  --color-border-tertiary: #e5e5ea;
+  --color-text-primary: #1c1c1e;
+  --color-text-secondary: #636366;
+  --color-text-tertiary: #aeaeb2;
+  --border-radius-lg: 14px;
+  --border-radius-md: 10px;
+  --color-border-info: #b8d9f0;
+  --color-text-info: #0b5cab;
+  --timeline-line: #d1d1d6;
+  --timeline-x: calc(68px + 12px + 15px);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-font-smoothing: antialiased; }
+body {
+  font-family: var(--font-sans);
+  background: #ececf0;
+  color: var(--color-text-primary);
+  line-height: 1.45;
+  padding: 48px 12px 2rem;
+}
+.lang-switch {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 3000;
+  display: flex;
+  gap: 2px;
+  padding: 3px;
+  background: var(--color-background-primary);
+  border: 1px solid var(--color-border-tertiary);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+.lang-switch button {
+  border: none;
+  background: transparent;
+  padding: 7px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: inherit;
+  color: var(--color-text-secondary);
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.lang-switch button.is-active {
+  background: var(--color-background-secondary);
+  color: var(--color-text-primary);
+}
+.lang-switch button:hover { color: var(--color-text-primary); }
+.container { padding: 1.25rem 0; max-width: 800px; margin: 0 auto; }
+.hero-title {
+  background: var(--color-background-primary);
+  border: 1px solid var(--color-border-tertiary);
+  border-radius: var(--border-radius-lg);
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  color: #7a3e9d;
+  box-shadow: 0 1px 2px rgba(0,0,0,.04);
+}
+.crown-sparkle {
+  display: inline-block;
+  margin-right: 4px;
+  transform-origin: 50% 70%;
+  animation: crownTwinkle 2.1s ease-in-out infinite;
+}
+@keyframes crownTwinkle {
+  0%, 100% { transform: scale(1) rotate(0deg); text-shadow: 0 0 0 rgba(255, 210, 64, 0); filter: saturate(1); }
+  22% { transform: scale(1.08) rotate(-6deg); text-shadow: 0 0 10px rgba(255, 210, 64, 0.75); filter: saturate(1.25); }
+  40% { transform: scale(0.98) rotate(4deg); text-shadow: 0 0 5px rgba(255, 180, 40, 0.4); }
+  62% { transform: scale(1.12) rotate(-3deg); text-shadow: 0 0 12px rgba(255, 220, 90, 0.85); filter: saturate(1.35); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .crown-sparkle { animation: none; }
+}
+.day-card {
+  background: var(--color-background-primary);
+  border: 1px solid var(--color-border-tertiary);
+  border-radius: var(--border-radius-lg);
+  margin-bottom: 1rem;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+.day-header { padding: 0.85rem 1.25rem; display: flex; align-items: center; gap: 12px; border-bottom: 1px solid var(--color-border-tertiary); }
+.day-badge { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 13px; flex-shrink: 0; }
+.day-title { font-size: 16px; font-weight: 600; color: var(--color-text-primary); letter-spacing: -0.01em; }
+.day-subtitle { font-size: 12px; color: var(--color-text-secondary); margin-top: 4px; line-height: 1.4; }
+.car-badge { font-size: 11px; padding: 2px 8px; border-radius: 20px; margin-left: auto; flex-shrink: 0; font-weight: 500; }
+.timeline { padding: 0.75rem 1.25rem 1rem; }
+.event { display: flex; gap: 12px; padding: 8px 0; position: relative; align-items: flex-start; }
+.event:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: var(--timeline-x);
+  transform: translateX(-50%);
+  top: 40px;
+  bottom: -10px;
+  width: 1px;
+  background: var(--timeline-line);
+  z-index: 0;
+}
+.time-col { width: 68px; flex-shrink: 0; }
+.time { font-size: 12px; color: var(--color-text-secondary); white-space: nowrap; padding-top: 5px; font-variant-numeric: tabular-nums; }
+.dot {
+  position: relative;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 14px;
+}
+.content { flex: 1; padding-top: 2px; padding-bottom: 6px; position: relative; z-index: 1; }
+.event-title { font-size: 14px; font-weight: 600; color: var(--color-text-primary); line-height: 1.4; }
+.event-note { font-size: 12px; color: var(--color-text-secondary); margin-top: 4px; line-height: 1.55; }
+.venue-req {
+  margin-top: 8px;
+  padding: 8px 10px;
+  background: #f3f7fb;
+  border: 1px solid var(--color-border-info);
+  border-radius: var(--border-radius-md);
+  font-size: 11px;
+  line-height: 1.55;
+  color: var(--color-text-secondary);
+}
+.venue-req-hd {
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--color-text-info);
+  margin: 0 0 6px;
+  letter-spacing: 0.01em;
+}
+.venue-req p { margin: 0 0 6px; }
+.venue-req ul { margin: 0; padding-left: 1.05rem; }
+.venue-req li { margin: 4px 0; }
+.req-crit {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: #fde8e8;
+  color: #9f1239;
+  margin-right: 5px;
+  vertical-align: 1px;
+}
+.tag { display: inline-block; font-size: 11px; padding: 1px 7px; border-radius: 20px; margin-right: 4px; margin-top: 4px; }
+.section-divider { height: 0.5px; background: var(--color-border-tertiary); margin: 4px 0; }
+.tips-box {
+  background: var(--color-background-primary);
+  border: 1px solid var(--color-border-tertiary);
+  border-radius: var(--border-radius-lg);
+  padding: 0.85rem 1rem;
+  margin-top: 0.75rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+.tips-title { font-size: 13px; font-weight: 500; color: var(--color-text-secondary); margin-bottom: 6px; }
+.tip-item { font-size: 12px; color: var(--color-text-secondary); padding: 2px 0; line-height: 1.5; }
+.surf-options {
+  background: var(--color-background-primary);
+  border: 1px solid var(--color-border-tertiary);
+  border-radius: var(--border-radius-lg);
+  padding: 0.85rem 1rem;
+  margin: 0.75rem 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+.surf-title { font-size: 12px; font-weight: 500; color: var(--color-text-secondary); margin-bottom: 6px; }
+.surf-pick {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  line-height: 1.55;
+  margin: -2px 0 8px;
+  padding: 0 2px;
+}
+.surf-row { display: flex; gap: 8px; flex-wrap: wrap; }
+.surf-card { flex: 1; min-width: 140px; background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-md); padding: 8px 10px; }
+.surf-name { font-size: 12px; font-weight: 500; color: var(--color-text-primary); }
+.surf-detail { font-size: 11px; color: var(--color-text-secondary); margin-top: 3px; line-height: 1.5; }
+.must-tag { background: #FAEEDA; color: #854F0B; }
+.opt-tag { background: #E1F5EE; color: #0F6E56; }
+.food-tag { background: #FBEAF0; color: #993556; }
+.nature-tag { background: #EAF3DE; color: #3B6D11; }
+.culture-tag { background: #EEEDFE; color: #534AB7; }
+.car-yes { background: #FAEEDA; color: #854F0B; }
+.car-no { background: #E1F5EE; color: #0F6E56; }
+.legend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  padding: 0.65rem 0.85rem;
+  background: var(--color-background-primary);
+  border: 1px solid var(--color-border-tertiary);
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+.legend-item { display: flex; align-items: center; gap: 5px; font-size: 12px; color: var(--color-text-secondary); }
+.legend-dot { width: 10px; height: 10px; border-radius: 50%; }
+.drive-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 0 6px;
+  padding-left: calc(68px + 12px + 30px + 12px);
+  position: relative;
+  min-height: 26px;
+}
+.drive-row::before {
+  content: '';
+  position: absolute;
+  left: var(--timeline-x);
+  transform: translateX(-50%);
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--timeline-line);
+  z-index: 0;
+}
+.drive-pill { font-size: 11px; padding: 2px 10px; border-radius: 20px; background: var(--color-background-secondary); color: var(--color-text-secondary); border: 0.5px solid var(--color-border-tertiary); }
+.route-bar { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 0.6rem 1rem; margin: 0 1.25rem 0.75rem; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; font-size: 12px; color: var(--color-text-secondary); }
+.route-stop { font-size: 12px; font-weight: 500; color: var(--color-text-primary); }
+.route-arrow { color: var(--color-text-tertiary); }
+.day-meta {
+  margin: 0 1.25rem 0.75rem;
+  padding: 0.55rem 0.75rem;
+  background: var(--color-background-secondary);
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--color-border-tertiary);
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  align-items: baseline;
+}
+.day-map-link {
+  color: var(--color-text-info);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.day-map-link:hover { border-bottom-color: var(--color-border-info); }
+.day-uber-total { color: var(--color-text-secondary); line-height: 1.5; flex: 1; min-width: 200px; }
+.day-map-frame-wrap {
+  margin: 0 1.25rem 0.85rem;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border-tertiary);
+  background: var(--color-background-secondary);
+}
+.day-map-osm {
+  display: block;
+  width: 100%;
+  height: 220px;
+  border: 0;
+}
+@media (min-width: 560px) {
+  .day-map-osm { height: 260px; }
+}
+.day-map-osm-caption {
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+  margin: 0;
+  padding: 6px 8px;
+  line-height: 1.45;
+  background: var(--color-background-primary);
+  border-top: 1px solid var(--color-border-tertiary);
+}
+.warn-box {
+  background: #fff8ed;
+  border: 1px solid rgba(133, 79, 11, 0.18);
+  border-radius: var(--border-radius-lg);
+  padding: 0.65rem 1rem;
+  margin: 0 0 1rem;
+  font-size: 12px;
+  color: #633806;
+  line-height: 1.6;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+.car-plan {
+  background: var(--color-background-primary);
+  border: 1px solid var(--color-border-tertiary);
+  border-radius: var(--border-radius-lg);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+.car-plan-title { font-size: 15px; font-weight: 600; color: var(--color-text-primary); margin-bottom: 4px; }
+.car-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+  border-top: 1px solid var(--color-border-tertiary);
+}
+.car-plan-title + .car-row { border-top: none; padding-top: 6px; }
+.car-day { font-size: 12px; font-weight: 600; color: var(--color-text-primary); min-width: 78px; flex-shrink: 0; padding-top: 1px; }
+.car-detail { font-size: 12px; color: var(--color-text-secondary); line-height: 1.65; flex: 1; }
+.badge-sm { font-size: 11px; padding: 2px 8px; border-radius: 20px; display: inline-block; margin-right: 6px; vertical-align: middle; font-weight: 500; }
+.badge-sm.no-car { background: #E1F5EE; color: #0F6E56; }
+.badge-sm.yes-car { background: #FAEEDA; color: #854F0B; }
+.uber-row { display: flex; align-items: center; gap: 6px; padding: 2px 0 6px; padding-left: calc(68px + 12px + 30px + 12px); position: relative; min-height: 26px; }
+.uber-row::before {
+  content: '';
+  position: absolute;
+  left: var(--timeline-x);
+  transform: translateX(-50%);
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--timeline-line);
+  z-index: 0;
+}
+.uber-pill { font-size: 11px; padding: 2px 10px; border-radius: 20px; background: var(--color-background-secondary); color: var(--color-text-secondary); border: 0.5px solid var(--color-border-tertiary); position: relative; z-index: 1; }
+.meal-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  padding: 0 1.25rem 0.65rem;
+  border-bottom: 1px solid var(--color-border-tertiary);
+}
+.meal-label { font-size: 11px; color: var(--color-text-tertiary); padding-top: 2px; }
+.meal-pill {
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  border: 0.5px solid var(--color-border-tertiary);
+  color: var(--color-text-secondary);
+  background: var(--color-background-secondary);
+}
+.day-wear-pack {
+  margin: 0.35rem 1.25rem 0.65rem;
+  padding: 0.55rem 0.75rem;
+  background: var(--color-background-secondary);
+  border: 1px dashed var(--color-border-tertiary);
+  border-radius: var(--border-radius-md);
+}
+.day-wear-pack-hd {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 4px;
+  letter-spacing: 0.02em;
+}
+.day-wear-pack-loc {
+  font-size: 10px;
+  color: var(--color-text-tertiary);
+  line-height: 1.45;
+  margin: 0 0 8px;
+}
+.day-wear-pack-tx {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  line-height: 1.55;
+}
+.day-wear-pack-tx ul { margin: 4px 0 0 1rem; padding: 0; list-style: disc; }
+.day-wear-pack-tx li { margin: 2px 0; }
+.restaurant-roster {
+  background: var(--color-background-secondary);
+  border-radius: var(--border-radius-lg);
+  padding: 1rem 1.25rem;
+  margin-top: 0.5rem;
+  border: 1px solid var(--color-border-tertiary);
+}
+.restaurant-roster-title { font-size: 14px; font-weight: 600; color: var(--color-text-primary); margin-bottom: 10px; }
+.restaurant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 8px;
+}
+.restaurant-card {
+  background: var(--color-background-primary);
+  border: 0.5px solid var(--color-border-tertiary);
+  border-radius: var(--border-radius-md);
+  padding: 8px 10px;
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  line-height: 1.45;
+}
+.restaurant-card strong { display: block; font-size: 12px; font-weight: 600; color: var(--color-text-primary); margin-bottom: 4px; }
+.restaurant-card--highlight { border: 2px solid var(--color-border-info); }
+.page-tabs { margin-bottom: 0.25rem; }
+.tab-bar {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 1rem;
+  padding: 4px;
+  background: var(--color-background-primary);
+  border: 1px solid var(--color-border-tertiary);
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+.tab-btn {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: inherit;
+  color: var(--color-text-secondary);
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.tab-btn:hover { color: var(--color-text-primary); }
+.tab-btn.is-active {
+  background: var(--color-background-secondary);
+  color: var(--color-text-primary);
+}
+.tab-panel[hidden] { display: none !important; }
+.booking-panel {
+  background: var(--color-background-primary);
+  border: 1px solid var(--color-border-tertiary);
+  border-radius: var(--border-radius-lg);
+  padding: 1rem 1.15rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+.booking-section-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--color-border-tertiary);
+}
+.booking-list { font-size: 13px; color: var(--color-text-secondary); line-height: 1.6; }
+.booking-list li { margin-bottom: 10px; padding-left: 2px; }
+.booking-list strong { color: var(--color-text-primary); font-weight: 600; }
+.booking-note { font-size: 12px; color: var(--color-text-tertiary); margin-top: 0.75rem; line-height: 1.5; }
+.checklist { list-style: none; padding: 0; margin: 0; }
+.checklist li { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px; font-size: 13px; color: var(--color-text-secondary); line-height: 1.55; }
+.checklist input[type="checkbox"] { margin-top: 3px; flex-shrink: 0; width: 17px; height: 17px; accent-color: var(--color-text-primary); cursor: pointer; }
+.checklist label { cursor: pointer; flex: 1; }
+.checklist label span { display: inline; }
+.checklist strong { color: var(--color-text-primary); font-weight: 600; }
+.booking-list--numbered .bk-idx {
+  flex: 0 0 auto;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 5px;
+  border-radius: 50%;
+  background: var(--color-background-secondary);
+  font-size: 11px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-secondary);
+  margin-top: 1px;
+}
+.bk-tag-urgent { font-size: 11px; padding: 1px 6px; border-radius: 20px; background: #FCEBEB; color: #A32D2D; margin-left: 4px; white-space: nowrap; font-style: normal; font-weight: 600; }
+.bk-tag-soon { font-size: 11px; padding: 1px 6px; border-radius: 20px; background: #FAEEDA; color: #854F0B; margin-left: 4px; white-space: nowrap; font-style: normal; font-weight: 600; }
+.pack-section-title { font-size: 13px; font-weight: 600; color: var(--color-text-primary); margin: 1rem 0 8px; }
+.pack-section-title:first-child { margin-top: 0; }
+.pack-form-iframe {
+  width: 100%;
+  min-height: 640px;
+  border: 1px solid var(--color-border-tertiary);
+  border-radius: var(--border-radius-md);
+  background: var(--color-background-secondary);
+  margin-top: 8px;
+}
+#pack-doc-if {
+  height: 600px;
+  min-height: 600px;
+}
+.pack-form-setup { white-space: pre-wrap; }
+.pack-doc-btn {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: inherit;
+  color: #fff;
+  background: #1c1c1e;
+  border: none;
+  border-radius: var(--border-radius-md);
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.pack-doc-btn:hover { opacity: 0.92; }
+.pack-doc-btn.mauka-secondary {
+  background: #fff;
+  color: #1c1c1e;
+  border: 1px solid #c4c4c4;
+}
+.pack-doc-btn.mauka-secondary:hover { opacity: 1; background: #fafafa; }
+.mauka-confirm {
+  margin: 0 1.25rem 0.75rem;
+  padding: 0.85rem 1rem;
+  background: #f7f5ff;
+  border: 1px solid #d9d0f0;
+  border-radius: var(--border-radius-md);
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--color-text-secondary);
+}
+.mauka-confirm--inline {
+  margin: 1rem 0 0;
+  background: var(--color-background-secondary);
+  border-color: var(--color-border-tertiary);
+}
+.mauka-confirm-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  color: var(--color-text-primary);
+}
+.mauka-confirm-body p { margin: 0 0 0.45rem; }
+.mauka-confirm-body p:last-child { margin-bottom: 0; }
+.mauka-confirm-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 0.75rem;
+}
+.mauka-confirm-hint {
+  margin: 0.55rem 0 0;
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+  line-height: 1.45;
+}
+.pack-iframe-note { font-size: 12px; color: var(--color-text-tertiary); margin-top: 8px; line-height: 1.5; }
+.price-guide {
+  background: var(--color-background-primary);
+  border: 1px solid var(--color-border-tertiary);
+  border-radius: var(--border-radius-lg);
+  padding: 1rem 1.15rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+.price-guide-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 8px;
+}
+.price-guide-intro { font-size: 12px; color: var(--color-text-secondary); line-height: 1.65; margin-bottom: 10px; }
+.price-guide-intro a { color: var(--color-text-info); font-weight: 600; text-decoration: none; }
+.price-guide-intro a:hover { text-decoration: underline; }
+.price-guide table {
+  width: 100%;
+  font-size: 11px;
+  border-collapse: collapse;
+  margin-top: 4px;
+}
+.price-guide th,
+.price-guide td {
+  border: 1px solid var(--color-border-tertiary);
+  padding: 6px 7px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.45;
+}
+.price-guide th {
+  background: var(--color-background-secondary);
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  font-size: 10px;
+}
+.price-guide td a { color: var(--color-text-info); font-weight: 500; word-break: break-word; }
+.price-guide-foot {
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+  margin-top: 8px;
+  line-height: 1.5;
+}
+.badge-alt { font-size: 10px; padding: 2px 6px; border-radius: 4px; font-weight: 600; margin-right: 4px; white-space: nowrap; vertical-align: middle; }
+.badge-alt--talk { background: #EEEDFE; color: #534AB7; }
+.badge-alt--care { background: #FAEEDA; color: #854F0B; }
+.book-tag { background: #EDE6FF; color: #422599; font-weight: 600; }
+.chase-pts-tag { background: #e0f2fe; color: #075985; font-weight: 600; }
+.chase-xrt-tag { background: #dbeafe; color: #1e3a8a; font-weight: 600; }
+.res-web-tag { background: #ecfdf5; color: #047857; font-weight: 600; }
+.res-phone-tag { background: #fef9c3; color: #854d0e; font-weight: 600; }
+.walkin-tag { background: #f4f4f5; color: #3f3f46; font-weight: 500; }
+.wait-tag { background: #FFF4E5; color: #7A4A0A; font-weight: 600; }
+.price-guide-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin-bottom: 10px; }
+.tab-btn { font-size: 13px; padding: 9px 8px; }
+@media (min-width: 480px) {
+  .tab-btn { font-size: 14px; padding: 10px 12px; }
+}
+</style>
+</head>
+<body>
+<div class="lang-switch" role="group" aria-label="语言切换" data-i18n-aria="aria_lang">
+  <button type="button" id="lang-zh" class="is-active" aria-pressed="true">中文</button>
+  <button type="button" id="lang-en" aria-pressed="false">EN</button>
+</div>
+<div class="container">
+
+<div class="hero-title" data-i18n="hero_title"><span class="crown-sparkle">👑</span>Wanting and Qingyue公主的夏威夷计划</div>
+
+<div class="page-tabs">
+<div class="tab-bar" role="tablist" aria-label="页面切换" data-i18n-aria="aria_tablist">
+<button type="button" class="tab-btn is-active" role="tab" aria-selected="true" id="tab-itinerary" aria-controls="panel-itinerary" data-tab="itinerary" data-i18n="tab_itinerary">行程</button>
+<button type="button" class="tab-btn" role="tab" aria-selected="false" id="tab-bookings" aria-controls="panel-bookings" data-tab="bookings" data-i18n="tab_bookings">预约</button>
+<button type="button" class="tab-btn" role="tab" aria-selected="false" id="tab-packing" aria-controls="panel-packing" data-tab="packing" data-i18n="tab_packing">打包</button>
+</div>
+
+<div id="panel-itinerary" class="tab-panel" role="tabpanel" aria-labelledby="tab-itinerary">
+
+<div class="legend">
+  <div class="legend-item"><div class="legend-dot" style="background:#EF9F27"></div><span data-i18n="leg_must">必做</span></div>
+  <div class="legend-item"><div class="legend-dot" style="background:#1D9E75"></div><span data-i18n="leg_opt">可选</span></div>
+  <div class="legend-item"><div class="legend-dot" style="background:#D4537E"></div><span data-i18n="leg_food">美食</span></div>
+  <div class="legend-item"><div class="legend-dot" style="background:#639922"></div><span data-i18n="leg_nature">自然</span></div>
+  <div class="legend-item"><div class="legend-dot" style="background:#7F77DD"></div><span data-i18n="leg_culture">文化</span></div>
+  <div class="legend-item"><span class="tag book-tag" data-i18n="tag_book">需订</span><span data-i18n="leg_book">须提前订票 / 订位</span></div>
+  <div class="legend-item"><span class="tag wait-tag" data-i18n="tag_wait">候位</span><span data-i18n="leg_wait">远程候位或排队（非固定座位票）</span></div>
+  <div class="legend-item"><div class="legend-dot" style="background:#e8f2fb;border:1px solid #9ec5eb"></div><span data-i18n="leg_venue_req">浅蓝框「须知」= 该点官网/场地方<strong>硬性或重要</strong>提示（标「重要」更优先）</span></div>
+  <div class="legend-item"><span class="tag chase-pts-tag" data-i18n="tag_chase_pts">CHASE 刷卡</span><span data-i18n="leg_chase_pts">到店用符合条款的 Chase 信用卡结账，通常可走「餐饮」等商户类别累积 UR/多倍积分（以账单 MCC、发卡行条款为准；预付票可能入账为旅行/娱乐等）。</span></div>
+  <div class="legend-item"><span class="tag chase-xrt-tag" data-i18n="tag_chase_xrt">CSR 专享桌</span><span data-i18n="leg_chase_xrt">仅当餐厅出现在 OpenTable「<a href="https://www.opentable.com/sapphire-reserve-dining" target="_blank" rel="noopener">Chase Sapphire Reserve / Exclusive Tables</a>」当前名单、且用合资格卡支付时，才可能享受专项餐饮报销/权益；名单常更新，本页<strong>不预填「已入选」</strong>。</span></div>
+  <div class="legend-item"><span class="tag res-web-tag" data-i18n="tag_res_web">网订</span><span data-i18n="leg_res_web">桌位或门票可通过官网/合作平台在线锁定（如 FareHarbor、AutoReserve 等）。</span></div>
+  <div class="legend-item"><span class="tag res-phone-tag" data-i18n="tag_res_phone">电订</span><span data-i18n="leg_res_phone">订位以电话为主；无统一可靠的全网网约入口。</span></div>
+  <div class="legend-item"><span class="tag walkin-tag" data-i18n="tag_walkin">到店</span><span data-i18n="leg_walkin">以现场排队 / walk-in / 外带为主，一般不锁桌。</span></div>
+</div>
+
+<div class="car-plan">
+  <div class="car-plan-title" data-i18n="car_plan_title">租车计划</div>
+  <div class="car-row">
+    <div class="car-day" data-i18n="c_day_417">4/17 周五</div>
+    <div class="car-detail"><span class="badge-sm no-car"><span data-i18n="bdg_nocar">无需租车</span></span><span data-i18n="c_det_417">全程 Uber，约 $55–80（HNL→Ala Moana→Hyatt；Mauka 往返接驳已含在票价，Hyatt 步行约 8–12 分钟至万豪上车点）</span></div>
+  </div>
+  <div class="car-row">
+    <div class="car-day" data-i18n="c_day_418">4/18 周六</div>
+    <div class="car-detail"><span class="badge-sm no-car"><span data-i18n="bdg_nocar">无需租车</span></span><span data-i18n="c_det_418">步行 + 多段 Uber（含 Kapahulu），约 $45–65</span></div>
+  </div>
+  <div class="car-row">
+    <div class="car-day" data-i18n="c_day_419">4/19 周日</div>
+    <div class="car-detail"><span class="badge-sm yes-car"><span data-i18n="bdg_1day">单日租车</span></span><span data-i18n="c_det_419">Enterprise / Budget Waikiki，约 $60–90/天</span></div>
+  </div>
+  <div class="car-row">
+    <div class="car-day" data-i18n="c_day_420">4/20 周一</div>
+    <div class="car-detail"><span class="badge-sm no-car"><span data-i18n="bdg_nocar">无需租车</span></span><span data-i18n="c_det_420">全程 Uber，约 $60–70</span></div>
+  </div>
+  <div class="car-row">
+    <div class="car-day" data-i18n="c_day_421">4/21 周二</div>
+    <div class="car-detail"><span class="badge-sm no-car"><span data-i18n="bdg_nocar">无需租车</span></span><span data-i18n="c_det_421">Uber 去机场 ~$35</span></div>
+  </div>
+</div>
+
+<div class="price-guide">
+  <div class="price-guide-title" data-i18n="pay_pace_title">节奏与预订总览</div>
+  <div class="price-guide-intro" data-i18n="pay_pace_block">
+    <p style="margin:0 0 8px;"><strong>说明：</strong>以下为行程涉及的门票、订位与参考价，均需自行在各官网或现场办理。</p>
+    <p style="margin:0;"><strong>行程算不算多？</strong><strong>D2 周六</strong>是「KCC + 钻石山 + 冲浪 + Skewer」<strong>早起、偏满</strong>；<strong>D3 周日</strong>是「租车 + Lanikai（踩水/拍照）+ UTV + <strong>平等院 Byodo-In</strong> + 海龟岸 + 还车 + Yoshitsune」—<strong>车程长</strong>。<strong>可行</strong>；若现场想松一点，优先缩短<strong>海龟停留</strong>或平等院园内时间，勿动 Mauka / UTV。</p>
+  </div>
+  <div class="price-guide-title" data-i18n="pay_book_master_title">所有需要「订票 / 订位 / 候位」— 准确产品名与官网</div>
+  <div class="price-guide-scroll" data-i18n="pay_book_master_block">
+    <table>
+      <thead>
+        <tr>
+          <th>类别</th>
+          <th>日程</th>
+          <th>活动</th>
+          <th>准确产品名（勿买错）</th>
+          <th>去哪儿订</th>
+          <th>参考价</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="badge-alt badge-alt--care">必订</span></td>
+          <td>4/17 晚</td>
+          <td>Mauka Warriors Luau</td>
+          <td><strong>KOA — Classic Package</strong>（全包：后排区 + 贝壳花环 + 成人 1 酒水券 + 文化前活动 + Polynesian 自助晚餐 + 主秀）。<strong>勿选 SHOW ONLY</strong>（无晚餐）。需 Waikiki 往返接驳在日历选 <strong>With Transportation</strong>（约 <strong>$30/人</strong>）</td>
+          <td><a href="https://www.maukawarriorsluau.com/reservations/" target="_blank" rel="noopener">maukawarriorsluau.com/reservations</a></td>
+          <td>成人约 <strong>$139+</strong>（以 FareHarbor 结账为准）；接驳另计</td>
+        </tr>
+        <tr>
+          <td><span class="badge-alt badge-alt--talk">建议</span></td>
+          <td>4/17 午</td>
+          <td>日料午餐</td>
+          <td>顺路方案（非炸猪排定食）：<strong>Goma Tei Ramen</strong> Ste 1215（拉面/担担/乌龙面等，午市常见一碗十几刀起）或 <strong>Kamukura</strong>（2F The Lanai）。非景点票；周五午市可能排队</td>
+          <td><a href="https://www.gomatei.com/" target="_blank" rel="noopener">gomatei.com</a> · <a href="https://www.google.com/maps/search/?api=1&query=Kamukura+Ramen+Ala+Moana+Center" target="_blank" rel="noopener">Kamukura 地图</a></td>
+          <td>约 <strong>$14–25/人</strong>（面类主餐为主，以结账为准）</td>
+        </tr>
+        <tr>
+          <td><span class="badge-alt badge-alt--care">必订</span></td>
+          <td>4/18 早</td>
+          <td>钻石山</td>
+          <td><strong>Diamond Head State Monument — Summit Trail</strong> 定时入园（<strong>不是</strong>第三方「仅 shuttle」产品，除非你们刻意改）</td>
+          <td><a href="https://www.recreation.gov/ticket/facility/300005" target="_blank" rel="noopener">recreation.gov</a></td>
+          <td><strong>$5/人</strong> + 预约费</td>
+        </tr>
+        <tr>
+          <td><span class="badge-alt badge-alt--care">必订</span></td>
+          <td>4/18 下午</td>
+          <td>冲浪课</td>
+          <td>三选一（均在 Waikiki 沙滩边）：<strong>Mickey Surf School</strong>、<strong>Moku Hawaii</strong>、<strong>Hawaii Surfing Academy (HSA)</strong>；订各校 <strong>Group Surf Lesson</strong> 约 <strong>周六 1pm 或 2pm</strong>。<strong>首推 Mickey</strong>（多含录像+照）</td>
+          <td><a href="https://www.mickeysurfschool.com/" target="_blank" rel="noopener">mickeysurfschool.com</a> · <a href="https://www.mokuhawaii.com/" target="_blank" rel="noopener">mokuhawaii.com</a> · <a href="https://www.hawaiisurfingacademy.com/" target="_blank" rel="noopener">hawaiisurfingacademy.com</a></td>
+          <td>约 <strong>$75–200+/人</strong></td>
+        </tr>
+        <tr>
+          <td><span class="badge-alt badge-alt--talk">强烈建议</span></td>
+          <td>4/18 晚</td>
+          <td>Skewer</td>
+          <td>电话订位；无单独「票种」</td>
+          <td>Google Maps「Honolulu Skewer House」567 Kapahulu Ave</td>
+          <td>约 <strong>$80/人</strong>估</td>
+        </tr>
+        <tr>
+          <td><span class="badge-alt badge-alt--care">必订</span></td>
+          <td>4/19</td>
+          <td>租车</td>
+          <td>Waikiki 门店 <strong>同日取还</strong>、预付</td>
+          <td><a href="https://www.enterprise.com/" target="_blank" rel="noopener">enterprise.com</a> / <a href="https://www.budget.com/" target="_blank" rel="noopener">budget.com</a> / <a href="https://www.alamo.com/" target="_blank" rel="noopener">alamo.com</a></td>
+          <td>约 <strong>$60–95/天</strong>+税险</td>
+        </tr>
+        <tr>
+          <td><span class="badge-alt badge-alt--care">必订</span></td>
+          <td>4/19 <strong>10:15am 发团</strong>（<strong>Ticket Office 9:30am 前签到</strong>＝提前 45 分钟；以确认邮件为准；官网另有其他时段以结账页为准）</td>
+          <td>Kualoa UTV</td>
+          <td><strong>2-Hour UTV Ride Along Tour</strong>（约 2hr，Ride Along，导游驾驶 <strong>UTV Raptor</strong>；以 kualoa.com 英文品名为准）。<strong>勿订</strong> Hollywood Movie Sites、Secret Island、ATV 自驾、Zipline 等——同名牧场、不同产品。本页时间轴按 <strong>9:30 签到 / 10:15 发团</strong>写；若改订其他场次请顺延后续节点。</td>
+          <td><a href="https://www.kualoa.com/experiences/tours" target="_blank" rel="noopener">kualoa.com/experiences/tours</a></td>
+          <td>本单实付约 <strong>$325.58/两人</strong>（小计 $309.90 + 税费等 $15.68；以发卡行账单为准）</td>
+        </tr>
+        <tr>
+          <td><span class="badge-alt badge-alt--talk">可选</span></td>
+          <td>4/19 午后</td>
+          <td>平等院 Byodo-In</td>
+          <td><strong>Valley of the Temples</strong> 陵园入园（含日式殿宇仿建）；<strong>现场购票</strong>，勿与其他欧胡寺庙产品混淆</td>
+          <td><a href="https://www.byodo-in.com/" target="_blank" rel="noopener">byodo-in.com</a>（营业时间以官网为准，常见约 8:30am–5pm）</td>
+          <td>入园常约 <strong>$5–10/人</strong> 级（以现场为准）</td>
+        </tr>
+        <tr>
+          <td><span class="badge-alt badge-alt--talk">强烈建议</span></td>
+          <td>4/19 晚</td>
+          <td>Yoshitsune</td>
+          <td>晚餐订位</td>
+          <td>Google / 电话（门店页）</td>
+          <td>点菜</td>
+        </tr>
+        <tr>
+          <td><span class="badge-alt badge-alt--talk">建议</span></td>
+          <td>4/20 11am</td>
+          <td>草裙舞课</td>
+          <td>Hyatt 住客 <strong>cultural / hula experience</strong>（具体名称以前台或官网活动表为准）</td>
+          <td><a href="https://www.hyatt.com/hotel/hawaii/hyatt-regency-waikiki-beach-resort-and-spa/hnlrw" target="_blank" rel="noopener">Hyatt Regency Waikiki</a> 前台 / Activities</td>
+          <td>以酒店为准</td>
+        </tr>
+        <tr>
+          <td><span class="badge-alt badge-alt--care">必订</span></td>
+          <td>4/20 下午</td>
+          <td>密苏里战舰</td>
+          <td><strong>Battleship Missouri Memorial</strong> 门票（与 Arizona 纪念艇<strong>分开买</strong>）</td>
+          <td><a href="https://www.visitpearlharbor.org/battleship-missouri/" target="_blank" rel="noopener">visitpearlharbor.org</a></td>
+          <td>约 <strong>$35–42/成人</strong></td>
+        </tr>
+        <tr>
+          <td><span class="badge-alt badge-alt--talk">可选</span></td>
+          <td>4/20</td>
+          <td>Arizona 纪念艇</td>
+          <td><strong>USS Arizona Memorial</strong> 船票（recreation.gov；放票少，以官网时段为准）</td>
+          <td><a href="https://www.recreation.gov/" target="_blank" rel="noopener">recreation.gov</a> 搜 Pearl Harbor Arizona</td>
+          <td>常 <strong>~$1</strong> 级</td>
+        </tr>
+        <tr>
+          <td><span class="badge-alt badge-alt--care">必订</span></td>
+          <td>4/20 晚</td>
+          <td>Izakaya Uosan</td>
+          <td>电话订周一晚位（无在线订）</td>
+          <td>☎ <strong>(808) 200-5077</strong></td>
+          <td>高端点菜</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="price-guide-title" data-i18n="pay_table_title">本行程付费 / 预约一览</div>
+  <div data-i18n="pay_table_block">
+    <table>
+      <thead>
+        <tr>
+          <th>项目</th>
+          <th>要订的「具体产品」</th>
+          <th>官网 / 预订</th>
+          <th>参考价</th>
+          <th>打折 / 窍门</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mauka Warriors Luau</td>
+          <td>周五场 · <strong>KOA Classic Package</strong>（全包晚餐+秀）；加购 Waikiki 接驳若需要</td>
+          <td><a href="https://www.maukawarriorsluau.com/reservations/" target="_blank" rel="noopener">maukawarriorsluau.com/reservations</a></td>
+          <td>成人约 <strong>$139+</strong>；接驳约 <strong>$30/人</strong>（以结账为准）</td>
+          <td>勿选 Show-only；邮件列表</td>
+        </tr>
+        <tr>
+          <td>D1 日料午餐</td>
+          <td><strong>Goma Tei</strong> 面类或 <strong>Kamukura</strong>（The Lanai）；非猪排定食、给晚上自助留胃</td>
+          <td><a href="https://www.gomatei.com/" target="_blank" rel="noopener">gomatei.com</a> · Google「Kamukura Ala Moana」</td>
+          <td>约 <strong>$14–25/人</strong>（面档）</td>
+          <td>Goma Tei 可查 Happy Hour；周五可略错峰</td>
+        </tr>
+        <tr>
+          <td>Diamond Head</td>
+          <td><strong>Summit Trail</strong> 预约入园+停车</td>
+          <td><a href="https://www.recreation.gov/ticket/facility/300005" target="_blank" rel="noopener">recreation.gov</a></td>
+          <td><strong>$5/人</strong> + 小额预约费</td>
+          <td>无团购；周六早段难抢</td>
+        </tr>
+        <tr>
+          <td>KCC 市集</td>
+          <td>仅入场买吃食</td>
+          <td><a href="https://www.kapiolani.hawaii.edu/event/kcc-farmers-market/" target="_blank" rel="noopener">KCC Farmers Market</a></td>
+          <td>食物约 <strong>$8–25</strong></td>
+          <td>免费入场；11:00 关门</td>
+        </tr>
+        <tr>
+          <td>冲浪课</td>
+          <td>三选一（均在 Waikiki 沙滩边集合）：<strong>Mickey Surf School</strong>、<strong>Moku Hawaii</strong>、<strong>Hawaii Surfing Academy (HSA)</strong>；订 <strong>Group Lesson</strong> 约 <strong>周六 1pm 或 2pm</strong>。<strong>首推 Mickey</strong>（多含录像+照）</td>
+          <td><a href="https://www.mickeysurfschool.com/" target="_blank" rel="noopener">Mickey</a> · <a href="https://www.mokuhawaii.com/" target="_blank" rel="noopener">Moku</a> · <a href="https://www.hawaiisurfingacademy.com/" target="_blank" rel="noopener">HSA</a></td>
+          <td>常见约 <strong>$75–200+/人/课</strong>（各校差很大）</td>
+          <td>官网直订；Moku 可加购跟拍；HSA 常价高—以各自「团课」页面为准</td>
+        </tr>
+        <tr>
+          <td>Honolulu Skewer House</td>
+          <td>订位（周六晚）</td>
+          <td>Google Maps / 电话</td>
+          <td>行程估 <strong>~$80/人</strong></td>
+          <td>团购少；尽早订</td>
+        </tr>
+        <tr>
+          <td>Kualoa UTV</td>
+          <td><strong>2-Hour UTV Ride Along Tour</strong>（2hr Ride Along；导游驾 UTV Raptor；非 Hollywood 电影之旅）</td>
+          <td><a href="https://www.kualoa.com/experiences/tours" target="_blank" rel="noopener">kualoa.com/experiences/tours</a></td>
+          <td>本单约 <strong>$325.58/两人</strong>（小计 $309.90 + 税费等 $15.68；以账单为准）</td>
+          <td>本行程为 <strong>10:15am 发团</strong>＝<strong>9:30am Ticket Office 签到</strong>（提前 45 分）。其他时段以官网为准。<strong>Secret Island / Movie Tour / ATV</strong> 等均<strong>≠</strong>本项</td>
+        </tr>
+        <tr>
+          <td>D3 平等院 Byodo-In</td>
+          <td><strong>Valley of the Temples</strong> 入园；行程插在 <strong>Kualoa UTV 结束 → Laniakea 海龟</strong> 之间（Kaneohe / Ahuimanu 一带）</td>
+          <td><a href="https://www.byodo-in.com/" target="_blank" rel="noopener">byodo-in.com</a> · Google「Byodo-In Temple Oahu」</td>
+          <td>约 <strong>$5–10/人</strong>（现场，以标价为准）</td>
+          <td>端庄着装、轻声；预留 <strong>约 40min 园内</strong> + 车程，海龟岸可略压缩</td>
+        </tr>
+        <tr>
+          <td>单日租车</td>
+          <td>Waikiki 取还（4/19）</td>
+          <td><a href="https://www.enterprise.com/" target="_blank" rel="noopener">Enterprise</a> / <a href="https://www.budget.com/" target="_blank" rel="noopener">Budget</a> / <a href="https://www.alamo.com/" target="_blank" rel="noopener">Alamo</a></td>
+          <td>约 <strong>$60–95/天</strong>+税与保险</td>
+          <td>预付、AAA、Costco Travel 等渠道自行比价</td>
+        </tr>
+        <tr>
+          <td>Yoshitsune</td>
+          <td>晚餐订位</td>
+          <td>Google / 电话订位</td>
+          <td>点菜制</td>
+          <td>无固定折扣</td>
+        </tr>
+        <tr>
+          <td>Nalu Health Bar</td>
+          <td>早餐 Acai 等</td>
+          <td><a href="https://www.naluhealthbar.com/" target="_blank" rel="noopener">naluhealthbar.com</a></td>
+          <td>约 <strong>$12–22</strong></td>
+          <td>关注 IG 偶有小活动</td>
+        </tr>
+        <tr>
+          <td>Hyatt 草裙舞</td>
+          <td>酒店内文化体验课</td>
+          <td><a href="https://www.hyatt.com/hotel/hawaii/hyatt-regency-waikiki-beach-resort-and-spa/hnlrw" target="_blank" rel="noopener">Hyatt Regency Waikiki</a> 活动/前台</td>
+          <td>以酒店报价为准</td>
+          <td>住客套餐偶含体验</td>
+        </tr>
+        <tr>
+          <td>USS Missouri</td>
+          <td>Battleship Memorial 门票</td>
+          <td><a href="https://www.visitpearlharbor.org/battleship-missouri/" target="_blank" rel="noopener">visitpearlharbor.org</a></td>
+          <td>约 <strong>$35–42/成人</strong>（以官网为准）</td>
+          <td>与 Arizona 艇票<strong>分开</strong>；建议提前买</td>
+        </tr>
+        <tr>
+          <td>Arizona Memorial</td>
+          <td>可选；预约艇票</td>
+          <td><a href="https://www.recreation.gov/" target="_blank" rel="noopener">recreation.gov</a> 搜 Arizona</td>
+          <td>常 <strong>$1</strong> 量级预约费（政策会变）</td>
+          <td>极难抢；不设也可看密苏里等</td>
+        </tr>
+        <tr>
+          <td>Izakaya Uosan</td>
+          <td>周一晚第一批位</td>
+          <td>电话 <strong>(808) 200-5077</strong></td>
+          <td>高端日料点菜</td>
+          <td>周三休；仅电话订位</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="price-guide-foot" data-i18n="pay_table_foot">以上美元价格为撰写时的常见区间，<strong>出发前务必在各官网再确认一次</strong>；税费、小费、接送另计。</p>
+</div>
+
+<!-- Day 1 -->
+<div class="day-card">
+  <div class="day-header">
+    <div class="day-badge" style="background:#FAEEDA;color:#854F0B;">D1</div>
+    <div>
+      <div class="day-title" data-i18n="d1_title">4月17日（周五）— 到达 + Ala Moana 日料午餐 + Mauka KOA Luau</div>
+      <div class="day-subtitle" data-i18n="d1_sub">11:05am落地 · HNL→Ala Moana 一带日料 → Hyatt 入住 → <strong>KOA Classic</strong> 全包（含自助晚餐）</div>
+    </div>
+    <div class="car-badge car-no" data-i18n="bdg_nocar">无需租车</div>
+  </div>
+  <div class="meal-bar">
+    <span class="meal-label" data-i18n="meal_label">餐厅：</span>
+    <span class="meal-pill" data-i18n="d1_ml1">🍱 午餐 — Ala Moana 日料（Goma Tei 面类 / The Lanai Kamukura）</span>
+    <span class="meal-pill" data-i18n="d1_ml2">🌺 晚餐 — Mauka <strong>KOA Classic</strong> 含 Polynesian 自助 + 主秀</span>
+  </div>
+  <div class="day-wear-pack">
+    <div class="day-wear-pack-hd" data-i18n="wear_pack_title">穿什么 · 带什么（按本日行程）</div>
+    <p class="day-wear-pack-loc" data-i18n="wear_pack_sub"><strong>在页面哪里：</strong>紧挨在上方「餐厅」灰条<strong>下面</strong>；细节请再对照同一天里更下面的<strong>路线条 + 时间轴</strong>。</p>
+    <div class="day-wear-pack-tx" data-i18n="d1_wear_pack"><ul><li><strong>按地点动线</strong>：<strong>HNL→Uber</strong> 舒适登机服+好走路鞋，证件/手机/充电宝随身。<strong>Ala Moana</strong> 商场步行多、空调偏冷可薄外套；小环保袋。<strong>Hyatt</strong> 入住后换 Aloha、步行万豪接驳点别穿全新磨脚鞋。<strong>Mauka 夜场</strong> 海风偏凉备薄外套；大行李留酒店不必背去 Luau。</li><li><strong>穿（概括）</strong>：白天透气层 + 晚间略正式休闲，可覆盖商场到 Luau。</li><li><strong>带</strong>：钱包、折叠伞/小雨衣、空水瓶。充电宝上飞机按航司规则。</li><li><strong>替换</strong>：袜子、轻便第二套（防溅油/出汗）。</li><li><strong>吹风等</strong>：用 Hyatt 客房吹风机即可，一般不必托运自带。</li></ul></div>
+  </div>
+  <div class="mauka-confirm">
+    <div class="mauka-confirm-title" data-i18n="d1_mauka_title">Mauka Warriors — 订票确认（#343484830）</div>
+    <div class="mauka-confirm-body" data-i18n="d1_mauka_body">
+      <p><strong>预订号</strong> #343484830 · <strong>套餐</strong> KOA Classic Package（Online，Rear Seating 后排区）</p>
+      <p><strong>人数 / 时段</strong> 成人 ×2 · 主活动约 <strong>5:00pm–9:00pm</strong>（HST）</p>
+      <p><strong>接驳上车</strong> <strong>4:15pm</strong> · <strong>Waikiki Beach Marriott</strong>，<strong>Paoakalani Ave 入口</strong>（非 Hyatt；以确认邮件为准）。已含往返交通约 <strong>$30/人</strong>（合计 $60/2人）。</p>
+      <p><strong>现场地址</strong> 91-1780 Midway St, Kapolei, HI 96707 · <strong>勿前往</strong> 旧 Hawaii Country Club 地址。</p>
+      <p><strong>签到 / 入场</strong> 全包票建议 <strong>4:45pm</strong> 前完成签到；Luau 场地 <strong>5:00pm</strong> 开放。</p>
+      <p><strong>预订备注</strong> 已留言希望靠前靠窗双座；票面仍为后排区，以现场安排为准。</p>
+      <p><strong>费用摘要</strong> 成人票面各 $127.30（未含手续费）· 码 <strong>Aloha30</strong> 折扣 -$83.40 · 交通 $60 · 税费 $27.28 · <strong>实付合计 $281.88</strong>（以发卡行账单为准）。</p>
+    </div>
+    <div class="mauka-confirm-actions">
+      <a class="pack-doc-btn" data-mauka-tickets="1" data-i18n="d1_mauka_btn_tickets" href="#" hidden target="_blank" rel="noopener noreferrer">打开电子票（FareHarbor）</a>
+      <a class="pack-doc-btn mauka-secondary" href="assets/mauka-booking-confirmation.png" target="_blank" rel="noopener noreferrer" data-i18n="d1_mauka_btn_png">查看确认单截图（收据）</a>
+    </div>
+    <p class="mauka-confirm-hint mauka-tickets-hint" data-i18n="d1_mauka_hint">若需一键打开 FareHarbor「Go to your tickets」页面：把邮件里的该链接粘贴到本页 &lt;script&gt; 中的 <strong>MAUKA_TICKETS_URL</strong> 后保存/刷新即可显示上方深色按钮。</p>
+  </div>
+  <div class="route-bar" data-i18n="route_d1">
+    <span class="route-stop">HNL机场</span><span class="route-arrow">→</span>
+    <span class="route-stop">Ala Moana日料</span><span class="route-arrow">→</span>
+    <span class="route-stop">Hyatt入住</span><span class="route-arrow">→</span>
+    <span class="route-stop">万豪接驳点</span><span class="route-arrow">→</span>
+    <span class="route-stop">Mauka Warriors</span><span class="route-arrow">→</span>
+    <span class="route-stop">返回Waikiki</span>
+  </div>
+  <div class="day-meta">
+    <a class="day-map-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/dir/Daniel+K.+Inouye+International+Airport,+Honolulu,+HI/Goma+Tei+Ramen,+1450+Ala+Moana+Blvd+%231215,+Honolulu,+HI/Hyatt+Regency+Waikiki+Beach+Resort+and+Spa,+Honolulu,+HI"><span data-i18n="day_map_lbl">地图：免费打开当日路线（新窗口）</span></a>
+    <span class="day-uber-total" data-i18n="d1_uber_total">Uber/Lyft 粗算：约 $45–65（HNL→Ala Moana→Hyatt；Mauka 接驳已打包在票内，步行至万豪上车点即可）</span>
+  </div>
+  <div class="day-map-frame-wrap">
+    <iframe class="day-map-osm" title="D1 地图" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=-158.08%2C21.275%2C-157.805%2C21.325&amp;layer=mapnik"></iframe>
+    <p class="day-map-osm-caption" data-i18n="day_map_osm_caption">免费地图（OpenStreetMap），可缩放拖动；逐段导航请点上方「地图：免费打开当日路线」链接。</p>
+  </div>
+  <div class="timeline">
+    <div class="event">
+      <div class="time-col"><div class="time">11:05am</div></div>
+      <div class="dot" style="background:#E1F5EE;color:#0F6E56;">✈</div>
+      <div class="content">
+        <div class="event-title" data-i18n="d1_t1">抵达 HNL，Uber 前往 Ala Moana 一带午餐</div>
+        <div class="event-note" data-i18n="d1_n1">行李随车；入境+取行李个体差异大，<strong>不必死守「一落地就吃饭」</strong>，以实际出关为准。日料面类比 heavy plate 清淡，给晚上 Mauka 自助留胃；餐后直接去 Hyatt 办理入住</div>
+      </div>
+    </div>
+    <div class="uber-row"><div class="uber-pill" data-i18n="d1_u1">Uber：HNL → Ala Moana Center，约 12–22min / ~$20–30（视入境与行李转盘）</div></div>
+    <div class="event">
+      <div class="time-col"><div class="time">12:00pm</div></div>
+      <div class="dot" style="background:#FBEAF0;color:#993556;">🍽</div>
+      <div class="content">
+        <div class="event-title" data-i18n="d1_t2">日式午餐（Ala Moana Center 一带）</div>
+        <div class="event-note" data-i18n="d1_n2">不想吃炸猪排定食时，优先 <strong>Goma Tei Ramen</strong>（Ala Moana <strong>Ste 1215</strong>，担担面 / 酱油拉面 / 乌龙面等；主食多在约 <strong>$14–22/碗</strong> 档，含税小费以结账为准；可查官网是否有 Happy Hour）。备选：<strong>Kamukura</strong>（<strong>2F The Lanai</strong> 美食广场，拉面/便当、开门早）。晚间已订 <strong>Mauka KOA（Classic Package）</strong>：后排席 + 贝壳花环 + 1 酒水券 + 自助晚餐 + 主秀（以确认邮件为准）</div>
+        <div class="venue-req" data-i18n="d1_mall_req"><div class="venue-req-hd">Ala Moana Center · 商场与食肆通用提示</div><ul><li><span class="req-crit">重要</span>过敏（麸质、花生、海鲜等）点单前须向<strong>该店店员</strong>声明；各店政策不同。</li><li>商场禁烟、宠物、推车与营业时间以现场告示为准；勿将行李长时间堵通道。</li></ul></div>
+        <span class="tag food-tag" data-i18n="tag_food">美食</span><span class="tag opt-tag" data-i18n="tag_opt">可选/换店</span><span class="tag chase-pts-tag" data-i18n="tag_chase_pts">CHASE 刷卡</span><span class="tag walkin-tag" data-i18n="tag_walkin">到店为主</span>
+      </div>
+    </div>
+    <div class="uber-row"><div class="uber-pill" data-i18n="d1_u2">Uber：Ala Moana → Hyatt Waikiki，约 12–18min / ~$15–22</div></div>
+    <div class="event">
+      <div class="time-col"><div class="time">1:45pm</div></div>
+      <div class="dot" style="background:#E1F5EE;color:#0F6E56;">🏨</div>
+      <div class="content">
+        <div class="event-title" data-i18n="d1_t3">入住 Hyatt，放行李 + 换 Aloha 装束</div>
+        <div class="event-note" data-i18n="d1_n3">按「午餐略晚」的现实节奏，仍约有 <strong>1.5h+</strong> 可冲凉、整理、或在 Waikiki 近处散步；<strong>3:10pm 前</strong>建议出门往万豪接驳点</div>
+      </div>
+    </div>
+    <div class="event">
+      <div class="time-col"><div class="time">3:20pm</div></div>
+      <div class="dot" style="background:#EEEDFE;color:#534AB7;">🚌</div>
+      <div class="content">
+        <div class="event-title" data-i18n="d1_t4">前往 Luau 接驳上车点（万豪侧）</div>
+        <div class="event-note" data-i18n="d1_n4">从 Hyatt 步行约 8–12 分钟至 <strong>Waikiki Beach Marriott</strong>，在 <strong>Paoakalani Ave 入口</strong>候车；<strong>4:15pm 发车</strong>（预订 #343484830）。勿与 Hyatt 侧其他上车点混淆。</div>
+      </div>
+    </div>
+    <div class="event">
+      <div class="time-col"><div class="time">4:15pm</div></div>
+      <div class="dot" style="background:#EEEDFE;color:#534AB7;">🛣</div>
+      <div class="content">
+        <div class="event-title" data-i18n="d1_t4b">接驳巴士开往 Mauka（Kapolei）</div>
+        <div class="event-note" data-i18n="d1_n4b">车程以路况为准；抵达后按确认单在 <strong>91-1780 Midway St</strong> 签到（<strong>非</strong> Hawaii Country Club 旧址）。</div>
+      </div>
+    </div>
+    <div class="event">
+      <div class="time-col"><div class="time">5:00pm</div></div>
+      <div class="dot" style="background:#EEEDFE;color:#534AB7;">🥁</div>
+      <div class="content">
+        <div class="event-title" data-i18n="d1_t5">Mauka Warriors Luau — KOA Classic · 约 5:00pm–9:00pm</div>
+        <div class="event-note" data-i18n="d1_n5">全包票建议 <strong>4:45pm</strong> 前完成签到；场地 <strong>5:00pm</strong> 开放。流程（以现场为准）：贝壳 lei → 文化活动（hula / kava / 纹身 / 矛技）→ Umu 烤猪 → Polynesian 自助晚餐 → 主秀（战士舞、火舞、hula）→ 约 <strong>9:00pm</strong> 散场</div>
+        <div class="venue-req" data-i18n="d1_mauka_req"><div class="venue-req-hd">Mauka Warriors（KOA Classic）· 行前须核对</div><ul><li><span class="req-crit">重要</span>接驳上车：<strong>Waikiki Beach Marriott · Paoakalani 入口 · 4:15pm</strong>（勿与其他 Hyatt 侧上车点混淆）。</li><li><span class="req-crit">重要</span>签到地址 <strong>91-1780 Midway St</strong>（勿跑旧 Hawaii Country Club 地址）。</li><li>含酒精饮品须符合<strong>夏威夷法定饮酒年龄</strong>及票种/年龄规则（以现场与确认邮件为准）。</li><li>户外海风与火舞表演区：备薄外套，遵守围栏与工作人员安全指示；过敏/宗教饮食限制行前查官网或致电。</li></ul></div>
+        <span class="tag must-tag" data-i18n="tag_must">必做</span><span class="tag culture-tag" data-i18n="tag_culture">文化</span><span class="tag book-tag" data-i18n="tag_book">需订</span><span class="tag res-web-tag" data-i18n="tag_res_web">网订</span><span class="tag chase-pts-tag" data-i18n="tag_chase_pts">CHASE 刷卡</span>
+      </div>
+    </div>
+    <div class="uber-row"><div class="uber-pill" data-i18n="d1_u3">接驳返回 Waikiki，约9:30–10pm抵达</div></div>
+    <div class="event">
+      <div class="time-col"><div class="time">9:30pm</div></div>
+      <div class="dot" style="background:#D3D1C7;color:#444441;">🌙</div>
+      <div class="content">
+        <div class="event-title" data-i18n="d1_t6">返回酒店休息</div>
+        <div class="event-note" data-i18n="d1_n6">明天7:15am出发去KCC，建议早点入睡</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Day 2 -->
+<div class="day-card">
+  <div class="day-header">
+    <div class="day-badge" style="background:#EEEDFE;color:#534AB7;">D2</div>
+    <div>
+      <div class="day-title" data-i18n="d2_title">4月18日（周六）— KCC + Diamond Head + Waikiki 午餐 + 冲浪 + 日落 + Skewer 夜宵</div>
+      <div class="day-subtitle" data-i18n="d2_sub">东线玩海 · 冲浪后<strong>回酒店冲澡换干衣</strong>再日落 / Kapahulu Skewer 夜宵（湿衣不直接逛店）</div>
+    </div>
+    <div class="car-badge car-no" data-i18n="bdg_nocar">无需租车</div>
+  </div>
+  <div class="meal-bar">
+    <span class="meal-label" data-i18n="meal_label">餐厅：</span>
+    <span class="meal-pill" data-i18n="d2_ml1">🥣 早餐 — KCC Farmers Market</span>
+    <span class="meal-pill" data-i18n="d2_ml2">🍱 午餐 — Waikiki 轻食 / 外带（如 Leonard's）</span>
+    <span class="meal-pill" data-i18n="d2_ml4">🔥 夜间 — Honolulu Skewer House</span>
+  </div>
+  <div class="day-wear-pack">
+    <div class="day-wear-pack-hd" data-i18n="wear_pack_title">穿什么 · 带什么（按本日行程）</div>
+    <p class="day-wear-pack-loc" data-i18n="wear_pack_sub"><strong>在页面哪里：</strong>紧挨在上方「餐厅」灰条<strong>下面</strong>；细节请再对照同一天里更下面的<strong>路线条 + 时间轴</strong>。</p>
+    <div class="day-wear-pack-tx" data-i18n="d2_wear_pack"><ul><li><strong>按地点动线</strong>：<strong>KCC</strong> 轻便+遮阳+现金零钞；<strong>Diamond Head</strong> 徒步鞋、水壶、防晒；<strong>Waikiki 午餐区</strong> 休闲即可；<strong>Waikiki 沙滩冲浪</strong>（Mickey/Moku/HSA 集合以邮件 pin 为准）泳衣/防晒泥；<strong>回 Hyatt</strong> 冲澡+<strong>吹风机</strong>换干衣；<strong>日落</strong> 薄外套可选；<strong>Kapahulu Skewer</strong> casual 但不邋遢。</li><li><strong>穿（概括）</strong>：上午运动防晒层，下午水上，傍晚干爽外出。</li><li><strong>带</strong>：双肩或斜挎、小防水袋、毛巾、手机防水套、防晒霜。</li><li><strong>替换</strong>：<strong>干内衣、T、短裤、袜子</strong>卷好防水袋—冲浪后先回酒店再逛；湿衣套塑料袋。</li></ul></div>
+  </div>
+  <div class="route-bar" data-i18n="route_d2">
+    <span class="route-stop">KCC市集</span><span class="route-arrow">→</span>
+    <span class="route-stop">Diamond Head</span><span class="route-arrow">→</span>
+    <span class="route-stop">Waikiki午餐</span><span class="route-arrow">→</span>
+    <span class="route-stop">冲浪课</span><span class="route-arrow">→</span>
+    <span class="route-stop">酒店换洗</span><span class="route-arrow">→</span>
+    <span class="route-stop">日落</span><span class="route-arrow">→</span>
+    <span class="route-stop">Skewer</span>
+  </div>
+  <div class="day-meta">
+    <a class="day-map-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/dir/Kapiolani+Community+College,+Honolulu,+HI/Diamond+Head+Summit+Trail,+Honolulu,+HI/Hyatt+Regency+Waikiki+Beach+Resort+and+Spa,+Honolulu,+HI/567+Kapahulu+Ave,+Honolulu,+HI"><span data-i18n="day_map_lbl">地图：免费打开当日路线（新窗口）</span></a>
+    <span class="day-uber-total" data-i18n="d2_uber_total">Uber/Lyft 粗算：约 $30–50（KCC 往返、Diamond→Waikiki、晚间 Kapahulu Skewer；大量路段可步行）</span>
+  </div>
+  <div class="day-map-frame-wrap">
+    <iframe class="day-map-osm" title="D2 地图" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=-158.02%2C21.255%2C-157.775%2C21.30&amp;layer=mapnik"></iframe>
+    <p class="day-map-osm-caption" data-i18n="day_map_osm_caption">免费地图（OpenStreetMap），可缩放拖动；逐段导航请点上方「地图：免费打开当日路线」链接。</p>
+  </div>
+  <div class="timeline">
+    <div class="event">
+      <div class="time-col"><div class="time">7:15am</div></div>
+      <div class="dot" style="background:#EAF3DE;color:#3B6D11;">🥑</div>
+      <div class="content">
+        <div class="event-title" data-i18n="d2_t1">KCC Farmers Market — 早饭</div>
+        <div class="event-note" data-i18n="d2_n1">仅周六 7:30-11am，11点准时关门。Oxtail pho、acai bowl、热带水果。步行或 Uber ~$10</div>
+        <div class="venue-req" data-i18n="d2_kcc_req"><div class="venue-req-hd">KCC Farmers Market · 场规要点</div><ul><li><span class="req-crit">重要</span>仅<strong>周六</strong>；<strong>11:00</strong> 准时清场，勿压线晚到。</li><li>现金与小额零钞更省事；摊位排队礼让行人。</li></ul></div>
+        <span class="tag culture-tag" data-i18n="tag_culture">文化</span>
+      </div>
+    </div>
+    <div class="uber-row"><div class="uber-pill" data-i18n="d2_u1">步行 500m → Diamond Head 入口</div></div>
+    <div class="event">
+      <div class="time-col"><div class="time">9:00am</div></div>
+      <div class="dot" style="background:#FAEEDA;color:#854F0B;">⛰</div>
+      <div class="content">
+        <div class="event-title" data-i18n="d2_t2">Diamond Head 登顶徒步</div>
+        <div class="event-note" data-i18n="d2_n2">提前网上预约（$5/人）。约1.5h往返，俯瞰 Waikiki 全景，早去避热</div>
+        <div class="venue-req" data-i18n="d2_diamond_req"><div class="venue-req-hd">Diamond Head（州立纪念碑）· 行前须知道</div><ul><li><span class="req-crit">重要</span>须持<strong>预约时段</strong>入园（Summit Trail，recreation.gov）；勿与未经授权的「仅 shuttle」等产品混淆。</li><li><span class="req-crit">重要</span>园内对<strong>随身行李尺寸、禁带品</strong>有规定（以现场公告为准）；常见做法是<strong>小包 + 水</strong>，按工作人员指示行走。</li><li>烈日、风大、台阶多：防晒补水；心血管或关节不适勿硬撑登顶。</li></ul></div>
+        <span class="tag must-tag" data-i18n="tag_must">必做</span><span class="tag nature-tag" data-i18n="tag_nature">自然</span><span class="tag book-tag" data-i18n="tag_book">需订</span>
+      </div>
+    </div>
+    <div class="uber-row"><div class="uber-pill" data-i18n="d2_u2">Uber：Diamond Head → Waikiki（午餐一带），约12–15min / ~$12–18</div></div>
+    <div class="event">
+      <div class="time-col"><div class="time">11:00am</div></div>
+      <div class="dot" style="background:#FBEAF0;color:#993556;">🍱</div>
+      <div class="content">
+        <div class="event-title" data-i18n="d2_t3">Waikiki 午餐（轻食 / 外带）</div>
+        <div class="event-note" data-i18n="d2_n3">午餐以<strong>快取 / 外带</strong>为主。可选：酒店附近简餐、Musubi、或 Leonard's Malasadas（Kapahulu，与晚间 Skewer 同区），为下午冲浪留胃</div>
+        <span class="tag food-tag" data-i18n="tag_food">美食</span>
+      </div>
+    </div>
+    <div class="event">
+      <div class="time-col"><div class="time">1:00pm</div></div>
+      <div class="dot" style="background:#FAEEDA;color:#854F0B;">🏄</div>
+      <div class="content">
+        <div class="event-title" data-i18n="d2_t4">冲浪课（Waikiki Beach）</div>
+        <div class="event-note" data-i18n="d2_n4">三校均在 <strong>Waikiki Beach</strong> 一带沙滩集合（步行可达，以预订邮件集合点为准）：<strong>Mickey Surf School</strong>、<strong>Moku Hawaii</strong>、<strong>Hawaii Surfing Academy (HSA)</strong>。官网订 <strong>周六 1pm 或 2pm</strong> 团课。<strong>首推 Mickey</strong>：多含全程录像+拍照，纪念感与性价比通常最好。<strong>Moku</strong>：教练与氛围口碑好，可加购跟拍。<strong>HSA</strong>：常含水鞋+冲浪服+摄影，价位档往往更高（以官网为准）。<strong>动线</strong>：上午 KCC / Diamond 在城东南，午饭后回 <strong>Waikiki</strong>；下午冲浪仍在<strong>酒店步行圈内</strong>沙滩，与上午轴线衔接顺畅。</div>
+        <div class="venue-req" data-i18n="d2_surf_req"><div class="venue-req-hd">冲浪课（Mickey / Moku / HSA）· 各校官网与确认邮件须核对</div><ul><li><span class="req-crit">重要</span>以<strong>预订确认邮件</strong>的集合时间、地点、取消/改期政策为准。</li><li><span class="req-crit">重要</span>多数课程会评估<strong>游泳能力与健康状况</strong>；受伤、发烧或离岸流警报时勿勉强下水。</li><li>优先物理防晒（防晒衣/锌膏）并听从教练哨声与手势；贵重电子产品防水自负。</li></ul></div>
+        <span class="tag must-tag" data-i18n="tag_must">必做</span><span class="tag book-tag" data-i18n="tag_book">需订</span>
+      </div>
+    </div>
+    <div class="uber-row"><div class="uber-pill" data-i18n="d2_u4">课后<strong>步行回酒店</strong>：湿泳衣/冲浪服必须换下，<strong>冲澡、吹干头发、换全套干衣服</strong>；再考虑小睡或 Kalakaua 闲逛（勿湿着久吹空调）</div></div>
+    <div class="event">
+      <div class="time-col"><div class="time">3:30pm</div></div>
+      <div class="dot" style="background:#D3D1C7;color:#444441;">🏨</div>
+      <div class="content">
+        <div class="event-title" data-i18n="d2_t5">回酒店冲澡换衣（冲浪后刚需）</div>
+        <div class="event-note" data-i18n="d2_n5">实务上视为<strong>必做</strong>：身上湿透、沙盐黏腻，直接去日落/商场会很不舒服。湿衣可手洗拧干晾浴室，或当晚送洗/烘干（以酒店设施为准），Skewer 前保持干爽得体</div>
+        <span class="tag must-tag" data-i18n="tag_must">必做</span>
+      </div>
+    </div>
+    <div class="event">
+      <div class="time-col"><div class="time">6:50pm</div></div>
+      <div class="dot" style="background:#FAEEDA;color:#854F0B;">🌅</div>
+      <div class="content">
+        <div class="event-title" data-i18n="d2_t7">Waikiki Beach 日落</div>
+        <div class="event-note" data-i18n="d2_n7">须在日落前完成酒店冲澡换干衣；4 月日落约 <strong>6:50pm</strong>，步行至沙滩或 Kalakaua 一带即可，不必再安排车程</div>
+        <span class="tag nature-tag" data-i18n="tag_nature">自然</span>
+      </div>
+    </div>
+    <div class="uber-row"><div class="uber-pill" data-i18n="d2_u5">Uber：Waikiki → Honolulu Skewer House（567 Kapahulu Ave），约8–12min / ~$10–14</div></div>
+    <div class="event">
+      <div class="time-col"><div class="time">8:00pm</div></div>
+      <div class="dot" style="background:#FBEAF0;color:#993556;">🔥</div>
+      <div class="content">
+        <div class="event-title" data-i18n="d2_t8">Honolulu Skewer House — 夜宵</div>
+        <div class="event-note" data-i18n="d2_n8">567 Kapahulu Ave，5–11pm。桌上自烤串烧；建议电话订位。人均约 $80；结束可 Uber 回酒店</div>
+        <div class="venue-req" data-i18n="d2_skew_req"><div class="venue-req-hd">Honolulu Skewer House · 到店前知道</div><ul><li><span class="req-crit">重要</span>热门时段建议<strong>电话订位</strong> <strong>☎ (808) 888-8680</strong>（以门店最新为准）；营业时段与价目以门店为准。</li><li>炭烤桌边温度高，注意烫伤与衣着；店内禁烟规则以现场为准。</li></ul></div>
+        <span class="tag food-tag" data-i18n="tag_food">美食</span><span class="tag book-tag" data-i18n="tag_book">需订</span><span class="tag res-phone-tag" data-i18n="tag_res_phone">电订</span><span class="tag chase-pts-tag" data-i18n="tag_chase_pts">CHASE 刷卡</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Day 3 -->
+<div class="day-card">
+  <div class="day-header">
+    <div class="day-badge" style="background:#E1F5EE;color:#0F6E56;">D3</div>
+    <div>
+      <div class="day-title" data-i18n="d3_title">4月19日（周日）— Lanikai + Kualoa UTV + 平等院 + 海龟岸 + Yoshitsune</div>
+      <div class="day-subtitle" data-i18n="d3_sub">Lanikai 踩水/拍照 → <strong>Kualoa 2-Hour UTV</strong>（<strong>9:30am Ticket Office 签到</strong> · <strong>10:15am 发团</strong>）→ <strong>午后平等院 Byodo-In</strong>（Kaneohe / Valley of the Temples，Kualoa 后顺路）→ Laniakea 海龟 → 还车 → <strong>Yoshitsune</strong> 晚餐</div>
+    </div>
+    <div class="car-badge car-yes" data-i18n="bdg_1day">单日租车</div>
+  </div>
+  <div class="meal-bar">
+    <span class="meal-label" data-i18n="meal_label">餐厅：</span>
+    <span class="meal-pill" data-i18n="d3_ml2">🍣 晚餐 — Yoshitsune</span>
+  </div>
+  <div class="day-wear-pack">
+    <div class="day-wear-pack-hd" data-i18n="wear_pack_title">穿什么 · 带什么（按本日行程）</div>
+    <p class="day-wear-pack-loc" data-i18n="wear_pack_sub"><strong>在页面哪里：</strong>紧挨在上方「餐厅」灰条<strong>下面</strong>；细节请再对照同一天里更下面的<strong>路线条 + 时间轴</strong>。</p>
+    <div class="day-wear-pack-tx" data-i18n="d3_wear_pack"><ul><li><strong>按地点动线</strong>：<strong>Waikiki 取车</strong> 驾照+信用卡+手机支架；<strong>Kailua/Lanikai</strong> 泳衣可穿内或外带，拖鞋、防晒、毛巾（短裤+凉鞋<strong>踩水拍照</strong>即可，轻装）；<strong>Kualoa UTV</strong> <strong>包脚鞋（covered shoes，官网建议）</strong>、深色耐脏裤、墨镜；<strong>平等院</strong> <strong>UTV 后先在车上换一整套干净外装+浅色鞋</strong>（陵园无淋浴，靠换装+湿巾；遮盖肩臂）；<strong>Laniakea</strong> 防晒帽、好走路鞋；<strong>还车→Hyatt</strong> 再淋浴+<strong>吹风</strong>；<strong>Yoshitsune</strong> 略正式休闲。</li><li><strong>穿（概括）</strong>：泳滩 + UTV 耐脏层 + <strong>平等院专用干净层</strong>（分层打包）。</li><li><strong>带</strong>：水壶、<strong>大湿巾</strong>、现金（陵园门票现场）、相机、<strong>大号密封袋</strong>（装 UTV 脏衣防弄脏座椅）。</li><li><strong>替换</strong>：<strong>UTV→平等院</strong>一整套干净上衣+外裤+袜子+鞋（与牧场泥灰隔离）；若 Lanikai 下过水再备一套回 Waikiki。</li></ul></div>
+  </div>
+  <div class="mauka-confirm">
+    <div class="mauka-confirm-title" data-i18n="d3_kualoa_title">Kualoa Ranch — 订单确认（KRHI012604130550）</div>
+    <div class="mauka-confirm-body" data-i18n="d3_kualoa_body">
+      <p><strong>订单号</strong> KRHI012604130550 · <strong>产品</strong> 2-Hour UTV Ride Along Tour（E-Commerce，已全额支付）</p>
+      <p><strong>日期 / 时段</strong> 2026-4-19（周日）· 向导驾车、乘客同车 · <strong>发团约 10:15am</strong> · 成人 ×2</p>
+      <p><strong>签到</strong> 须在预定团次时间前 <strong>45 分钟</strong>抵达牧场 <strong>Ticket Office</strong> 办签到——本单为 <strong>不晚于 9:30am</strong>（确认页红字与邮件一致）。签到须出示与预订姓名一致的 <strong>Photo ID</strong>。</p>
+      <p><strong>费用摘要</strong> 小计 <strong>$309.90</strong> · 税费等 <strong>$15.68</strong> · <strong>订单合计 $325.58</strong>（以发卡行账单为准）。下单日期 2026-4-12。</p>
+      <p><strong>行前</strong> 建议事先完成官网<strong>电子免责 Waiver</strong>以省现场排队；头盔由牧场提供且全程须佩戴。</p>
+    </div>
+    <div class="mauka-confirm-actions">
+      <a class="pack-doc-btn" data-kualoa-waiver="1" data-i18n="d3_kualoa_btn_waiver" href="#" hidden target="_blank" rel="noopener noreferrer">打开 Kualoa Waiver（电子签）</a>
+      <a class="pack-doc-btn mauka-secondary" href="assets/kualoa-booking-confirmation.png" target="_blank" rel="noopener noreferrer" data-i18n="d3_kualoa_btn_png">查看确认单截图（收据）</a>
+    </div>
+    <p class="mauka-confirm-hint kualoa-waiver-hint" data-i18n="d3_kualoa_hint">若需一键打开确认邮件里的 Waiver 链接：把该完整 URL 粘贴到本页 &lt;script&gt; 中的 <strong>KUALOA_WAIVER_URL</strong> 后保存/刷新即可显示上方深色按钮。</p>
+  </div>
+  <div class="route-bar" data-i18n="route_d3">
+    <span class="route-stop">取车</span><span class="route-arrow">→</span>
+    <span class="route-stop">Lanikai</span><span class="route-arrow">→</span>
+    <span class="route-stop">Kualoa UTV</span><span class="route-arrow">→</span>
+    <span class="route-stop">平等院</span><span class="route-arrow">→</span>
+    <span class="route-stop">Laniakea海龟</span><span class="route-arrow">→</span>
+    <span class="route-stop">还车</span><span class="route-arrow">→</span>
+    <span class="route-stop">Yoshitsune</span>
+  </div>
+  <div class="day-meta">
+    <a class="day-map-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/dir/Hyatt+Regency+Waikiki+Beach+Resort+and+Spa,+Honolulu,+HI/Lanikai+Beach,+Kailua,+HI/Kualoa+Ranch,+Oahu,+HI/Byodo-In+Temple,+47-200+Kahekili+Hwy,+Kaneohe,+HI+96744/Laniakea+Beach,+HI/Hyatt+Regency+Waikiki+Beach+Resort+and+Spa,+Honolulu,+HI"><span data-i18n="day_map_lbl">地图：免费打开当日路线（新窗口）</span></a>
+    <span class="day-uber-total" data-i18n="d3_uber_total">当日以租车自驾为主；Uber 粗算：约 $0–15（还车后若短程）</span>
+  </div>
+  <div class="day-map-frame-wrap">
+    <iframe class="day-map-osm" title="D3 地图" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=-158.15%2C21.38%2C-157.68%2C21.68&amp;layer=mapnik"></iframe>
+    <p class="day-map-osm-caption" data-i18n="day_map_osm_caption">免费地图（OpenStreetMap），可缩放拖动；逐段导航请点上方「地图：免费打开当日路线」链接。</p>
+  </div>
+  <div class="timeline">
+    <div class="event">
+      <div class="time-col"><div class="time">7:00am</div></div>
+      <div class="dot" style="background:#FAEEDA;color:#854F0B;">🚗</div>
+      <div class="content">
+        <div class="event-title" data-i18n="d3_t1">取租车（Waikiki 门店）</div>
+        <div class="event-note" data-i18n="d3_n1">Enterprise / Budget / Alamo，提前网上预订，确认 <strong>7:00</strong> 可取车；柜台+验车常需 <strong>15–25min</strong>。若订 <strong>Kualoa 2-Hour UTV（10:15am 发团，9:30am Ticket Office 签到）</strong>，建议<strong>准时到柜台</strong>、办完<strong>立刻往东</strong>，别在市区绕路</div>
+        <div class="venue-req" data-i18n="d3_rental_req"><div class="venue-req-hd">Waikiki 租车取车 · 门店常见条款（以你选的合同为准）</div><ul><li><span class="req-crit">重要</span>驾驶员须持<strong>有效驾照+信用卡</strong>；年龄、额外驾驶员、跨国驾照等以<strong>租车公司官网与柜台合同</strong>为准。</li><li>全险/自付额、油电政策、超时还车等签字前确认清楚。</li></ul></div>
+        <span class="tag book-tag" data-i18n="tag_book">需订</span>
+      </div>
+    </div>
+    <div class="event">
+      <div class="time-col"><div class="time">8:00am</div></div>
+      <div class="dot" style="background:#E1F5EE;color:#0F6E56;">🏖</div>
+      <div class="content">
+        <div class="event-title" data-i18n="d3_t2">Lanikai Beach — 晨滩踩水 / 拍照</div>
+        <div class="event-note" data-i18n="d3_n2"><strong>9:30 Ticket Office 签到来得及吗？</strong>可以，但属<strong>紧凑可行</strong>档（<strong>10:15am</strong> 才是车行出发，别混淆）：取车尽量 <strong>7:00–7:25</strong> 办完就向东；Lanikai 作<strong>短停踩水/拍照</strong>即可（不必长泡）。务必<strong>不晚于 8:25am</strong>从 Kailua 一带开往 Kualoa（常 <strong>35–40min</strong>，早高峰浮动 + 现场排队；再晚容错很低）。取车若大排队、或想在海滩多留，更稳的是改订官网其他<strong>午场</strong>。若下水，冲脚换干衣再上车。</div>
+        <div class="venue-req" data-i18n="d3_lanikai_req"><div class="venue-req-hd">Lanikai / Kailua 海滩 · 公共沙滩安全</div><ul><li><span class="req-crit">重要</span>无救生员时<strong>勿离岸过远</strong>；注意离岸流与礁石割伤。</li><li>勿在私人地产界内停车或穿行；垃圾随身带走。</li></ul></div>
+        <span class="tag must-tag" data-i18n="tag_must">必做</span><span class="tag nature-tag" data-i18n="tag_nature">自然</span>
+      </div>
+    </div>
+    <div class="drive-row"><div class="drive-pill" data-i18n="d3_dr1">自驾：Kailua/Lanikai → Kualoa Ranch，约 35–40min（H3；早高峰略浮动）</div></div>
+    <div class="event">
+      <div class="time-col"><div class="time">9:30am</div></div>
+      <div class="dot" style="background:#FAEEDA;color:#854F0B;">🚙</div>
+      <div class="content">
+        <div class="event-title" data-i18n="d3_t3">Kualoa Ranch — 2-Hour UTV Ride Along（10:15am 发团 · 9:30am Ticket Office 签到）</div>
+        <div class="event-note" data-i18n="d3_n3">官网品名 <strong>2-Hour UTV Ride Along Tour</strong>；本单实付合计 <strong>$325.58</strong>（小计 $309.90 + 税费等 $15.68，以账单为准）。向导驾驶 <strong>UTV Raptor</strong>、乘客同车；雨天照常；太阳镜建议自备。<strong>约 12:15pm</strong> 可离开牧场动线（2hr + 换装缓冲以现场为准）。规则、证件、Waiver、取消政策<strong>以下方蓝色「须知」与确认邮件为准</strong>。</div>
+        <div class="venue-req" data-i18n="d3_utv_req"><div class="venue-req-hd">Kualoa「2-Hour UTV Ride Along Tour」· 官网硬性 / 重要须知</div><p style="margin:0 0 6px;font-size:11px;opacity:.95">在官网点击 <strong>Continue</strong> 即表示<strong>所有参与者</strong>均满足该 tour 要求；以下为 Restrictions &amp; Requirements 与取消政策<strong>摘要</strong>（英文原文以官网 / 确认邮件为准）。</p><ul><li><span class="req-crit">必达</span><strong>须在预定团次开始前 45 分钟</strong>到牧场 <strong>Ticket Office</strong> 签到（本单：<strong>9:30am 前</strong>签到，<strong>10:15am</strong> 发团）。</li><li><span class="req-crit">必达</span>签到须出示与预订姓名一致的<strong>带照片身份证件（Photo ID）</strong>。</li><li><span class="req-crit">重要</span><strong>你不会驾驶 UTV</strong>：Kualoa 导游全程驾驶 <strong>UTV Raptor</strong>，乘客乘车。</li><li><span class="req-crit">重要</span><strong>乘客最低年龄 5 岁</strong>；<strong>17 岁及以下</strong>参加任何 tour 须有<strong>成年人</strong>陪同。</li><li><span class="req-crit">重要</span>网上预订时，订单内<strong>每 4 位客人</strong>对应预留<strong>一辆车</strong>（具体以确认邮件为准）。</li><li><span class="req-crit">重要</span><strong>安全头盔由牧场提供，全程须佩戴。</strong></li><li><span class="req-crit">重要</span>出发前签到会核对是否符合 tour 要求；不符合者<strong>无法继续</strong>。</li><li><span class="req-crit">重要</span>本 tour <strong>非常颠簸</strong>；<strong>孕妇</strong>或有<strong>既存 / 反复伤病</strong>者<strong>不建议</strong>参加。</li><li><span class="req-crit">建议</span><strong>Covered shoes</strong>（包脚鞋）。</li><li><span class="req-crit">重要</span>适用 tour 须签署<strong>责任豁免（Waiver）</strong>。取消：通过 <strong>kualoa.com</strong> 预订即接受<strong>全额扣款</strong>；<strong>出发前至少 48 小时</strong>致电 <strong>808-237-7321</strong>（<strong>HST 7:30am–4:30pm</strong>）可申请<strong>全额退款</strong>或视名额改期；<strong>未到场 / 错过规定签到 / 未提前 48 小时致电</strong>取消则不退；距 tour <strong>48 小时内及当日预订</strong>为最终订单。</li></ul></div>
+        <span class="tag must-tag" data-i18n="tag_must">必做</span><span class="tag nature-tag" data-i18n="tag_nature">自然</span><span class="tag book-tag" data-i18n="tag_book">需订</span>
+      </div>
+    </div>
+    <div class="drive-row"><div class="drive-pill" data-i18n="d3_dr2">自驾：Kualoa Ranch → 平等院（Valley of the Temples / Byodo-In），约 20–30min（向风岸）。<strong>抵园后先别急着买票逛</strong>：用停车场/游客洗手间<strong>擦手脸</strong>；在车内换好<strong>备用干净衣裤+浅色鞋</strong>（UTV 后常见灰土泥点；脏衣进密封袋）。陵园<strong>无淋浴</strong>，靠换装+湿巾整理到「可进纪念地」的状态即可。</div></div>
+    <div class="event">
+      <div class="time-col"><div class="time">12:45pm</div></div>
+      <div class="dot" style="background:#EEEDFE;color:#534AB7;">⛩</div>
+      <div class="content">
+        <div class="event-title" data-i18n="d3_t5">平等院 Byodo-In（Valley of the Temples）</div>
+        <div class="event-note" data-i18n="d3_n5"><strong>UTV → 平等院：</strong>Kualoa 出来衣服常沾<strong>灰土泥点</strong>，和陵园要求的「整洁、端庄」不矛盾——因为中间靠的是<strong>换装与擦拭</strong>，不是冲澡。停好车后先在<strong>洗手间/车内</strong>换<strong>整套备用干净外装</strong>（见上方自驾条与穿搭清单：<strong>密封袋装脏衣</strong>），再购票入园。动线放在 <strong>2-Hour UTV 约 12:15pm 结束后</strong>：古兰尼在向风侧，平等院在 <strong>Kaneohe / Ahuimanu</strong>，车程短，时间轴以 <strong>12:45pm 抵园</strong>为参考，再去北岸海龟。<strong>现场购陵园门票</strong>（常见约 $5–10/人级，以窗口为准）；开放时段以 <a href="https://www.byodo-in.com/" target="_blank" rel="noopener">byodo-in.com</a> 为准。园内建议 <strong>30–45min</strong>：敲钟、喂鱼、拍凤凰堂倒影；轻声。若 UTV 结束略晚，压缩园内时间，<strong>勿拖垮</strong>后面海龟与还车。</div>
+        <div class="venue-req" data-i18n="d3_byodo_req"><div class="venue-req-hd">平等院 / Valley of the Temples · 陵园与礼仪</div><ul><li><span class="req-crit">重要</span>若<strong>刚结束 UTV</strong>：务必在<strong>停车场与游客洗手间</strong>完成<strong>擦手脸 + 更衣</strong>（换干净鞋裤上衣）后再进入祠堂与墓园核心区；这是对场地与其他访客的尊重。</li><li><span class="req-crit">重要</span><strong>现场购票</strong>入园（票价以窗口为准）；开放时段以 <a href="https://www.byodo-in.com/" target="_blank" rel="noopener">byodo-in.com</a> 为准。</li><li><span class="req-crit">重要</span>宗教纪念地：请<strong>轻声、勿攀爬建筑与墓碑</strong>；着装宜<strong>遮盖肩臂</strong>、避免过短下装。</li><li>备<strong>现金</strong>常更顺；蚊虫与日晒注意防蚊防晒；园内禁带宠物等以陵园告示为准。</li></ul></div>
+        <span class="tag culture-tag" data-i18n="tag_culture">文化</span><span class="tag opt-tag" data-i18n="tag_opt">可选/压缩</span>
+      </div>
+    </div>
+    <div class="drive-row"><div class="drive-pill" data-i18n="d3_dr4">自驾：平等院 → Laniakea Beach（北岸海龟岸），约 50–65min（多经 H2，路况浮动）</div></div>
+    <div class="event">
+      <div class="time-col"><div class="time">3:00pm</div></div>
+      <div class="dot" style="background:#E1F5EE;color:#0F6E56;">🐢</div>
+      <div class="content">
+        <div class="event-title" data-i18n="d3_t4">Laniakea Beach — 下午看海龟</div>
+        <div class="event-note" data-i18n="d3_n4">2–4pm 海龟较活跃；志愿者驻场讲解。路边找位勿挡消防栓。<strong>省体力</strong>可只停 <strong>20–35min</strong> 拍照即走，为回 Waikiki 还车留缓冲。</div>
+        <div class="venue-req" data-i18n="d3_turtle_req"><div class="venue-req-hd">Laniakea 海龟岸 · 野生动物与法规</div><ul><li><span class="req-crit">重要</span>海龟为<strong>受保护野生动物</strong>：<strong>禁止触摸、骑乘、投喂</strong>；勿用闪光灯近距离直射；须保持<strong>法定安全距离</strong>（违规可罚款）。</li><li><span class="req-crit">重要</span>路边泊车勿挡<strong>消防栓</strong>与弯道视距；浪况差时勿冒险近岸。</li><li>服从志愿者与交通指挥；垃圾随身带走。</li></ul></div>
+        <span class="tag must-tag" data-i18n="tag_must">必做</span><span class="tag nature-tag" data-i18n="tag_nature">自然</span>
+      </div>
+    </div>
+    <div class="drive-row"><div class="drive-pill" data-i18n="d3_dr5">自驾：Laniakea → Waikiki 还车点，约 55–75min（H2/H1，路况浮动）</div></div>
+    <div class="event">
+      <div class="time-col"><div class="time">5:45pm</div></div>
+      <div class="dot" style="background:#FAEEDA;color:#854F0B;">🚗</div>
+      <div class="content">
+        <div class="event-title" data-i18n="d3_t7">还租车，回酒店换洗</div>
+        <div class="event-note" data-i18n="d3_n7">平等院若穿的是<strong>UTV 后换上的干净层</strong>，鞋底仍可能带尘—进日料店前回 Hyatt <strong>冲澡更衣</strong>最稳。若在 Lanikai / 海龟岸<strong>下过水或沾沙</strong>：还车后同样先淋浴再 Yoshitsune；别把湿沙衣穿进冷气很足的日料店。</div>
+      </div>
+    </div>
+    <div class="event">
+      <div class="time-col"><div class="time">7:30pm</div></div>
+      <div class="dot" style="background:#FBEAF0;color:#993556;">🍣</div>
+      <div class="content">
+        <div class="event-title" data-i18n="d3_t8">晚餐：Yoshitsune</div>
+        <div class="event-note" data-i18n="d3_n8">步行即达，营业至10pm，miso misoyaki butterfish 必点。提前订位</div>
+        <div class="venue-req" data-i18n="d3_yosh_req"><div class="venue-req-hd">Yoshitsune · 到店规</div><ul><li><span class="req-crit">重要</span>建议<strong>提前订位</strong>：<strong>☎ (808) 926-5616</strong>，或尝试合作平台 <a href="https://autoreserve.com/restaurants/mcPpL8hoLjo6AUtD3y2p" target="_blank" rel="noopener">AutoReserve 网约</a>（是否官方以店家回复为准）；热门时段勿假设 walk-in。</li><li>店内轻声；生鱼与酒类适量；刷卡/现金以门店为准。</li></ul></div>
+        <span class="tag food-tag" data-i18n="tag_food">美食</span><span class="tag book-tag" data-i18n="tag_book">需订</span><span class="tag res-web-tag" data-i18n="tag_res_web">网订</span><span class="tag res-phone-tag" data-i18n="tag_res_phone">电订</span><span class="tag chase-pts-tag" data-i18n="tag_chase_pts">CHASE 刷卡</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Day 4 -->
+<div class="day-card">
+  <div class="day-header">
+    <div class="day-badge" style="background:#FBEAF0;color:#993556;">D4</div>
+    <div>
+      <div class="day-title" data-i18n="d4_title">4月20日（周一）— Nalu早餐 + 草裙舞 + 珍珠港 + Izakaya Uosan</div>
+      <div class="day-subtitle" data-i18n="d4_sub">草裙舞11am · 珍珠港下午场 · Uosan晚餐 · 全程 Uber</div>
+    </div>
+    <div class="car-badge car-no" data-i18n="bdg_nocar">无需租车</div>
+  </div>
+  <div class="meal-bar">
+    <span class="meal-label" data-i18n="meal_label">餐厅：</span>
+    <span class="meal-pill" data-i18n="d4_ml1">🥣 早餐 — Nalu Health Bar Waikiki</span>
+    <span class="meal-pill" data-i18n="d4_ml2">🍶 晚餐 — Izakaya Uosan</span>
+  </div>
+  <div class="day-wear-pack">
+    <div class="day-wear-pack-hd" data-i18n="wear_pack_title">穿什么 · 带什么（按本日行程）</div>
+    <p class="day-wear-pack-loc" data-i18n="wear_pack_sub"><strong>在页面哪里：</strong>紧挨在上方「餐厅」灰条<strong>下面</strong>；细节请再对照同一天里更下面的<strong>路线条 + 时间轴</strong>。</p>
+    <div class="day-wear-pack-tx" data-i18n="d4_wear_pack"><ul><li><strong>按地点动线</strong>：<strong>Nalu</strong> 散步轻便；<strong>Hyatt 草裙舞</strong> 易活动短裤/T、易出汗可结束回房冲凉；<strong>Waikiki 午餐</strong> 继续轻便好打包；<strong>珍珠港</strong> 大量步行<strong>平底运动鞋</strong>、<strong>小包+水</strong>过安检；<strong>Uosan</strong> smart casual；晚间回酒店再用<strong>吹风</strong>整理。</li><li><strong>穿（概括）</strong>：白天休闲运动底，晚餐抬一档。</li><li><strong>带</strong>：证件好拿取、充电宝、纸巾；珍珠港勿背大包。</li><li><strong>替换</strong>：草裙舞后内衣/T 可选；薄外套防空调/晚风。</li></ul></div>
+  </div>
+  <div class="route-bar" data-i18n="route_d4">
+    <span class="route-stop">Nalu早餐</span><span class="route-arrow">→</span>
+    <span class="route-stop">草裙舞课11am</span><span class="route-arrow">→</span>
+    <span class="route-stop">午餐自理</span><span class="route-arrow">→</span>
+    <span class="route-stop">珍珠港下午场</span><span class="route-arrow">→</span>
+    <span class="route-stop">Izakaya Uosan</span>
+  </div>
+  <div class="day-meta">
+    <a class="day-map-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/dir/Nalu+Health+Bar,+226+Lewers+St,+Honolulu,+HI/Hyatt+Regency+Waikiki+Beach+Resort+and+Spa,+Honolulu,+HI/Pearl+Harbor+National+Memorial,+HI/Izakaya+Uosan,+1221+Kapiolani+Blvd,+Honolulu,+HI"><span data-i18n="day_map_lbl">地图：免费打开当日路线（新窗口）</span></a>
+    <span class="day-uber-total" data-i18n="d4_uber_total">Uber/Lyft 粗算：约 $60–75（Waikiki↔珍珠港 + 珍珠港→Uosan + 回酒店）</span>
+  </div>
+  <div class="day-map-frame-wrap">
+    <iframe class="day-map-osm" title="D4 地图" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=-158.08%2C21.275%2C-157.79%2C21.34&amp;layer=mapnik"></iframe>
+    <p class="day-map-osm-caption" data-i18n="day_map_osm_caption">免费地图（OpenStreetMap），可缩放拖动；逐段导航请点上方「地图：免费打开当日路线」链接。</p>
+  </div>
+  <div class="timeline">
+    <div class="event">
+      <div class="time-col"><div class="time">7:30am</div></div>
+      <div class="dot" style="background:#EAF3DE;color:#3B6D11;">🥣</div>
+      <div class="content">
+        <div class="event-title" data-i18n="d4_t1">Nalu Health Bar Waikiki — 早餐</div>
+        <div class="event-note" data-i18n="d4_n1">226 Lewers St，步行即达，7am开门。2023年 Best of Honolulu acai bowl，有机食材，可配本地烘焙咖啡</div>
+        <div class="venue-req" data-i18n="d4_nalu_req"><div class="venue-req-hd">Nalu Health Bar · 轻食店规</div><ul><li>坚果、乳制品等过敏，点单前须向店员声明；高峰可能排队。</li><li>店面小费/刷卡政策以结账为准。</li></ul></div>
+        <span class="tag food-tag" data-i18n="tag_food">美食</span><span class="tag walkin-tag" data-i18n="tag_walkin">到店为主</span><span class="tag chase-pts-tag" data-i18n="tag_chase_pts">CHASE 刷卡</span>
+      </div>
+    </div>
+    <div class="event">
+      <div class="time-col"><div class="time">11:00am</div></div>
+      <div class="dot" style="background:#FAEEDA;color:#854F0B;">💃</div>
+      <div class="content">
+        <div class="event-title" data-i18n="d4_t3">草裙舞课（酒店，11am）</div>
+        <div class="event-note" data-i18n="d4_n3">Hyatt Regency Waikiki 内预订，约 1h 结束；若大量出汗可<strong>回房快速冲凉换轻便衣裤</strong>再吃午餐（仍在酒店周边）</div>
+        <div class="venue-req" data-i18n="d4_hula_req"><div class="venue-req-hd">Hyatt 草裙舞 / 文化体验 · 酒店活动规</div><ul><li><span class="req-crit">重要</span>以酒店当日<strong>活动表 / 前台</strong>公布的正式名称、时间、名额与取消规则为准。</li><li><span class="req-crit">重要</span>体能类体验：心血管或关节问题者量力而行，不适即停。</li></ul></div>
+        <span class="tag must-tag" data-i18n="tag_must">必做</span><span class="tag culture-tag" data-i18n="tag_culture">文化</span><span class="tag book-tag" data-i18n="tag_book">需订</span>
+      </div>
+    </div>
+    <div class="event">
+      <div class="time-col"><div class="time">12:30pm</div></div>
+      <div class="dot" style="background:#FBEAF0;color:#993556;">🍱</div>
+      <div class="content">
+        <div class="event-title" data-i18n="d4_t4">午餐自理（Waikiki 附近）</div>
+        <div class="event-note" data-i18n="d4_n4">以<strong>外带/简餐</strong>为主，避免 sit-down 拖戏。目标 <strong>1:15pm 前吃完</strong>并带好证件/水；<strong>1:25–1:35pm</strong> 建议已坐进 Uber 往珍珠港（车程 ~35–45min，想 2pm 前入园需留缓冲）</div>
+      </div>
+    </div>
+    <div class="uber-row"><div class="uber-pill" data-i18n="d4_u1">Uber：Waikiki → 珍珠港，约 35–50min / ~$35（周一午後易塞，宁早勿晚）</div></div>
+    <div class="event">
+      <div class="time-col"><div class="time">2:00pm</div></div>
+      <div class="dot" style="background:#FAEEDA;color:#854F0B;">⚓</div>
+      <div class="content">
+        <div class="event-title" data-i18n="d4_t5">珍珠港国家纪念地 — 下午场</div>
+        <div class="event-note" data-i18n="d4_n5">USS Missouri 战列舰必看，约 1.5–2h。园区约 <strong>5pm</strong> 关门，<strong>2pm 前入园</strong>较稳。安检对<strong>大包限制严</strong>，随身<strong>小包+水</strong>即可。Arizona Memorial 为另订时段、排队耗时较长；若有 <strong>5:30pm Uosan</strong> 订位，建议<strong>先保障密苏里</strong>并预留接驳，Arizona 视抢票与现场排队实况再定。周一正常开放</div>
+        <div class="venue-req" data-i18n="d4_pearl_req"><div class="venue-req-hd">珍珠港国家纪念地 · 安检与礼仪</div><ul><li><span class="req-crit">重要</span><strong>大包 / 大型背包禁入或受限</strong>（尺寸以现场公告为准）；随身<strong>小包 + 证件 + 水</strong>最省事。</li><li><span class="req-crit">重要</span><strong>USS Missouri</strong> 与 <strong>Arizona Memorial</strong> 为<strong>不同票务与动线</strong>；Arizona 船票紧、排队长，请按已购票时段到场。</li><li>纪念地请保持庄重，部分区域限制饮食、喧哗与不当摄影；遵守 ranger 指示。</li></ul></div>
+        <span class="tag must-tag" data-i18n="tag_must">必做</span><span class="tag culture-tag" data-i18n="tag_culture">文化</span><span class="tag book-tag" data-i18n="tag_book">需订</span>
+      </div>
+    </div>
+    <div class="uber-row"><div class="uber-pill" data-i18n="d4_u2">Uber：珍珠港 → Izakaya Uosan，约20min / ~$25</div></div>
+    <div class="event">
+      <div class="time-col"><div class="time">5:30pm</div></div>
+      <div class="dot" style="background:#FBEAF0;color:#993556;">🍶</div>
+      <div class="content">
+        <div class="event-title" data-i18n="d4_t6">晚餐：Izakaya Uosan</div>
+        <div class="event-note" data-i18n="d4_n6">1221 Kapiolani Blvd，5pm开门（周三休）。uni truffle butter rice + foie gras daikon 必点。订第一批位避免等候。电话预约 (808) 200-5077</div>
+        <div class="venue-req" data-i18n="d4_uosan_req"><div class="venue-req-hd">Izakaya Uosan · 订位与店规</div><ul><li><span class="req-crit">重要</span><strong>仅接受电话订位</strong> <strong>(808) 200-5077</strong>；<strong>周三休店</strong>。</li><li><span class="req-crit">重要</span>高端日料：取消、迟到、最低消费或着装要求以店家确认为准；勿携带外食外饮。</li></ul></div>
+        <span class="tag food-tag" data-i18n="tag_must_eat">必吃</span><span class="tag book-tag" data-i18n="tag_book">需订</span><span class="tag res-phone-tag" data-i18n="tag_res_phone">电订</span><span class="tag chase-pts-tag" data-i18n="tag_chase_pts">CHASE 刷卡</span>
+      </div>
+    </div>
+    <div class="event">
+      <div class="time-col"><div class="time">8:00pm</div></div>
+      <div class="dot" style="background:#D3D1C7;color:#444441;">🌙</div>
+      <div class="content">
+        <div class="event-title" data-i18n="d4_t7">Uber 回 Waikiki，最后一个夜晚</div>
+        <div class="event-note" data-i18n="d4_n7">可沿 Kalakaua Ave 散步感受 Waikiki 夜晚，或直接回酒店休息</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Day 5 -->
+<div class="day-card">
+  <div class="day-header">
+    <div class="day-badge" style="background:#D3D1C7;color:#444441;">D5</div>
+    <div>
+      <div class="day-title" data-i18n="d5_title">4月21日（周二）— 退房 + 直飞离岛</div>
+      <div class="day-subtitle" data-i18n="d5_sub">12:10pm 起飞 · 离岛日<strong>以退房与机场缓冲为主</strong> · 建议 <strong>9:40 前</strong>上车前往 HNL</div>
+    </div>
+    <div class="car-badge car-no" data-i18n="bdg_nocar">无需租车</div>
+  </div>
+  <div class="meal-bar">
+    <span class="meal-label" data-i18n="meal_label">餐厅：</span>
+    <span class="meal-pill" data-i18n="d5_ml1">☕ 上午 — 酒店附近咖啡 / 简餐（退房前）</span>
+    <span class="meal-pill" data-i18n="d5_ml2">✈ 离岛 — 机场简餐 / 便利店（以登机时间为准）</span>
+  </div>
+  <div class="day-wear-pack">
+    <div class="day-wear-pack-hd" data-i18n="wear_pack_title">穿什么 · 带什么（按本日行程）</div>
+    <p class="day-wear-pack-loc" data-i18n="wear_pack_sub"><strong>在页面哪里：</strong>紧挨在上方「餐厅」灰条<strong>下面</strong>；细节请再对照同一天里更下面的<strong>路线条 + 时间轴</strong>。</p>
+    <div class="day-wear-pack-tx" data-i18n="d5_wear_pack"><ul><li><strong>按地点动线</strong>：<strong>酒店最后半天</strong> 舒适易穿脱、方便塞行李箱；<strong>退房→Uber</strong> 证件/手机在手；<strong>HNL</strong> 登机层、机舱偏冷备薄外套；安检鞋易脱。</li><li><strong>穿（概括）</strong>：「路上舒服 + 机舱保暖」一层套一层。</li><li><strong>带</strong>：登机牌/电子登机、充电宝、空水瓶（安检后接水）。</li><li><strong>替换</strong>：行李前一晚收好；咖啡渍可备一件备用 T。</li><li><strong>吹风等</strong>：早上酒店吹完再装箱最省事。</li></ul></div>
+  </div>
+  <div class="route-bar" data-i18n="route_d5">
+    <span class="route-stop">酒店退房</span><span class="route-arrow">→</span>
+    <span class="route-stop">HNL</span>
+  </div>
+  <div class="day-meta">
+    <a class="day-map-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/dir/Hyatt+Regency+Waikiki+Beach+Resort+and+Spa,+Honolulu,+HI/Daniel+K.+Inouye+International+Airport,+Honolulu,+HI"><span data-i18n="day_map_lbl">地图：免费打开当日路线（新窗口）</span></a>
+    <span class="day-uber-total" data-i18n="d5_uber_total">Uber/Lyft 粗算：约 $28–42（酒店 → HNL 单程；离岛日不跑远）</span>
+  </div>
+  <div class="day-map-frame-wrap">
+    <iframe class="day-map-osm" title="D5 地图" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=-158.04%2C21.262%2C-157.755%2C21.305&amp;layer=mapnik"></iframe>
+    <p class="day-map-osm-caption" data-i18n="day_map_osm_caption">免费地图（OpenStreetMap），可缩放拖动；逐段导航请点上方「地图：免费打开当日路线」链接。</p>
+  </div>
+  <div class="timeline">
+    <div class="event">
+      <div class="time-col"><div class="time">8:00am</div></div>
+      <div class="dot" style="background:#EAF3DE;color:#3B6D11;">🌺</div>
+      <div class="content">
+        <div class="event-title" data-i18n="d5_t1">最后一晨 · 咖啡 / 简餐 + 打包退房</div>
+        <div class="event-note" data-i18n="d5_n1">离岛日留足<strong>退房、装行李、安检</strong>缓冲；避免额外远距车程。若想拍海景，酒店露台或 Waikiki 沙滩边短走即可。</div>
+      </div>
+    </div>
+    <div class="uber-row"><div class="uber-pill" data-i18n="d5_u1">Uber：酒店 → HNL，约 25–40min / ~$28–42（视路况）</div></div>
+    <div class="event">
+      <div class="time-col"><div class="time">9:40am</div></div>
+      <div class="dot" style="background:#E1F5EE;color:#0F6E56;">✈</div>
+      <div class="content">
+        <div class="event-title" data-i18n="d5_t3">Uber 前往机场，12:10pm 起飞</div>
+        <div class="event-note" data-i18n="d5_n3">国内航班建议提前 2h+ 到 HNL；路况波动，9:40 上车较稳妥。Aloha 🤙</div>
+        <div class="venue-req" data-i18n="d5_airport_req"><div class="venue-req-hd">HNL 机场 · 安检前须知道</div><ul><li><span class="req-crit">重要</span>随身液体遵循 <strong>TSA 3-1-1</strong>；<strong>充电宝、锂电池勿托运</strong>，随身携带并按航司/机组规定使用。</li><li>刀具、大瓶防晒等托运/随身规则以 TSA 与航司官网为准；预留托运排队时间。</li></ul></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="restaurant-roster">
+  <div class="restaurant-roster-title" data-i18n="rost_title">餐厅全览</div>
+  <div class="restaurant-grid">
+    <div class="restaurant-card" data-i18n="rost_1"><strong>D1 午餐 · Ala Moana（避开炸猪排定食）</strong><br><strong>Goma Tei Ramen</strong> Ste 1215 · 拉面/担担/乌龙面 · 午市多在一碗十几刀起（以菜单为准）<br><a href="https://www.gomatei.com/" target="_blank" rel="noopener">gomatei.com</a><br><strong>Kamukura</strong> · 2F The Lanai 美食广场 · 拉面/便当 · 早开门<br><a href="https://www.google.com/maps/search/?api=1&query=Kamukura+Ramen+Ala+Moana+Center" target="_blank" rel="noopener">Google 地图搜 Kamukura</a><br><span class="tag chase-pts-tag">CHASE 刷卡</span><span class="tag walkin-tag">到店为主</span></div>
+    <div class="restaurant-card" data-i18n="rost_2"><strong>Mauka Warriors Luau — KOA Classic</strong><br>17号（周五）5:00pm–9:00pm · 预订 <strong>#343484830</strong> · 接驳 <strong>4:15pm</strong> 万豪 Paoakalani 入口<br>maukawarriorsluau.com · 周一/六不开<br><span class="tag res-web-tag">网订</span><span class="tag chase-pts-tag">CHASE 刷卡</span></div>
+    <div class="restaurant-card" data-i18n="rost_3"><strong>KCC Farmers Market</strong><br>18号（周六）早餐<br>仅周六 7:30–11am<br><span class="tag walkin-tag">到店为主</span><span class="tag chase-pts-tag">CHASE 刷卡</span></div>
+    <div class="restaurant-card" data-i18n="rost_leo"><strong>Leonard's Bakery</strong><br>18号（周六）午餐外带可选<br>Kapahulu · Malasadas<br><span class="tag walkin-tag">到店为主</span><span class="tag chase-pts-tag">CHASE 刷卡</span></div>
+    <div class="restaurant-card" data-i18n="rost_9"><strong>Honolulu Skewer House</strong><br>18号（周六）夜间<br>5–11pm · 567 Kapahulu Ave · 建议订位 <strong>☎ (808) 888-8680</strong><br><span class="tag res-phone-tag">电订</span><span class="tag chase-pts-tag">CHASE 刷卡</span></div>
+    <div class="restaurant-card" data-i18n="rost_byodo"><strong>平等院 Byodo-In ☸</strong><br>19号（周日）午后 · Kualoa UTV 后顺路<br>Valley of the Temples · Kaneohe / Ahuimanu · 现场门票<br><a href="https://www.byodo-in.com/" target="_blank" rel="noopener">byodo-in.com</a></div>
+    <div class="restaurant-card" data-i18n="rost_8"><strong>Yoshitsune</strong><br>19号（周日）晚餐<br>5:30pm · 步行可达 · <strong>☎ (808) 926-5616</strong> 或 <a href="https://autoreserve.com/restaurants/mcPpL8hoLjo6AUtD3y2p" target="_blank" rel="noopener">AutoReserve 网约</a>（以店家为准）<br><span class="tag res-web-tag">网订</span><span class="tag res-phone-tag">电订</span><span class="tag chase-pts-tag">CHASE 刷卡</span></div>
+    <div class="restaurant-card" data-i18n="rost_10"><strong>Nalu Health Bar</strong><br>20号（周一）早餐<br>226 Lewers St · 7am开门 · 步行可达<br><span class="tag walkin-tag">到店为主</span><span class="tag chase-pts-tag">CHASE 刷卡</span></div>
+    <div class="restaurant-card restaurant-card--highlight" data-i18n="rost_11"><strong>Izakaya Uosan ★</strong><br>20号（周一）晚餐<br>5pm开门 · 须电话预约 ☎ (808) 200-5077<br><span class="tag res-phone-tag">电订</span><span class="tag chase-pts-tag">CHASE 刷卡</span></div>
+  </div>
+</div>
+
+<!-- Surf Options -->
+<div class="surf-options">
+  <div class="surf-title" data-i18n="surf_title">冲浪课三选一（D2 周六 · Waikiki 沙滩集合 · 约 1pm 或 2pm）</div>
+  <p class="surf-pick" data-i18n="surf_pick">三家为 <strong>Mickey Surf School</strong>、<strong>Moku Hawaii</strong>、<strong>Hawaii Surfing Academy (HSA)</strong>；均在酒店步行范围内的 <strong>Waikiki 沙滩</strong>（以各校预订信集合点为准）。<strong>与 D2 上午顺路</strong>：KCC / Diamond 在东南，午饭后已回 Waikiki 轴线，下午冲浪不再拉你去北岸或远点，Mickey 动线自然。<strong>首推 Mickey</strong>：多含全程录像+照片，纪念感与性价比通常最好。<strong>Moku</strong>：教练与氛围口碑好，可加购跟拍。<strong>HSA</strong>：常含水鞋/冲浪服与摄影，价位档常更高（以官网为准）。</p>
+  <div class="surf-row">
+    <div class="surf-card" style="border-color: var(--color-border-info);">
+      <div class="surf-name" style="color: var(--color-text-info);">Mickey Surf School ★</div>
+      <div class="surf-detail" data-i18n="surf_mickey">团课常含免费录像+拍照<br>第一次体验又想留片的首选<br>订周六 1pm / 2pm 档</div>
+    </div>
+    <div class="surf-card">
+      <div class="surf-name">Moku Hawaii</div>
+      <div class="surf-detail" data-i18n="surf_moku">Sky / Ray 等教练，氛围轻松<br>可加购跟拍（常见 +$100/hr 级，以店为准）<br>私教与档期弹性较好</div>
+    </div>
+    <div class="surf-card">
+      <div class="surf-name">Hawaii Surfing Academy (HSA)</div>
+      <div class="surf-detail" data-i18n="surf_hsa">常送水鞋+冲浪服<br>含摄影 · 小班比常见 1:2<br>价位常 $200+/2hr（以官网为准）</div>
+    </div>
+  </div>
+</div>
+
+<div class="tips-box">
+  <div class="tips-title" data-i18n="tips_title">行程备注</div>
+  <div class="tip-item" data-i18n="tip_1">· 首日（17号）：HNL → Ala Moana 午餐（时间轴以 <strong>12:00</strong> 为参考，入境慢则整体顺延）→ Hyatt <strong>1:45</strong> 入住 → <strong>3:10pm 前</strong>出门往万豪接驳（<strong>4:15pm</strong> 发车）→ Mauka <strong>KOA Classic</strong>（5:00pm–9:00pm）→ 约 9:30pm 休息</div>
+  <div class="tip-item" data-i18n="tip_2">· 18号：KCC 仅周六；Diamond 需预约；午餐轻食；冲浪 1pm/2pm 后<strong>务必回酒店冲澡换干衣</strong>再日落 / Skewer；21 号离岛以机场时间优先</div>
+  <div class="tip-item" data-i18n="tip_3">· 19号：<strong>2-Hour UTV Ride Along</strong>（已订 <strong>10:15am</strong> 发团，<strong>9:30am Ticket Office</strong> 提前 45 分签到；带 Photo ID、事先 Waiver 更省队）。与 Lanikai 短停可衔接，但务必 <strong>8:25 前</strong>从 Kailua 开往 Kualoa；想更松改官网其他时段。<strong>平等院 Byodo-In</strong> 在 UTV 后、海龟前（现场门票，byodo-in.com 查开放）；海龟岸可短停；Yoshitsune 晚餐；当日租车</div>
+  <div class="tip-item" data-i18n="tip_4">· 20号：Izakaya Uosan 须电话预约 (808) 200-5077，周三休店</div>
+  <div class="tip-item" data-i18n="tip_5">· 4/17–18、4/20–21 无需租车；4/19 北岸单日租车，当晚还车</div>
+  <div class="tip-item" data-i18n="tip_6">· 首日午餐 <strong>Ala Moana</strong>：若不喜猪排饭，改 <strong>Goma Tei</strong> 面类或 <strong>The Lanai Kamukura</strong>（见餐厅总览）；晚间 <strong>Mauka KOA</strong> 全包档，座位在后排区，以确认邮件为准</div>
+  <div class="tip-item" data-i18n="tip_7">· <strong>动线原则</strong>：水上活动、大汗徒步/草裙舞课后，默认先<strong>回酒店冲凉更衣</strong>再去商场、日料或吹很久空调；D2 冲浪后必换洗；D3 若下过水或沾沙，还车后同样先回酒店再日料</div>
+</div>
+
+</div>
+
+<div id="panel-bookings" class="tab-panel" role="tabpanel" aria-labelledby="tab-bookings" hidden>
+  <div class="booking-panel">
+    <div class="booking-section-title" data-i18n="bk_all_title">预约清单（越早越好）</div>
+    <ul class="checklist booking-list booking-list--numbered">
+      <li><span class="bk-idx" aria-hidden="true">1</span><input type="checkbox" id="chk-bk_1" data-check-key="bk_1"><label for="chk-bk_1"><span data-i18n="bk_1"><strong>Kualoa 2-Hour UTV Ride Along</strong> <span class="bk-tag-urgent">已订核对</span><br>kualoa.com · 周日 <strong>10:15am</strong> 发团 · <strong>9:30am</strong> Ticket Office 签到 · 订单 <strong>KRHI012604130550</strong> · 合计约 <strong>$325.58</strong></span></label></li>
+      <li><span class="bk-idx" aria-hidden="true">2</span><input type="checkbox" id="chk-bk_2" data-check-key="bk_2"><label for="chk-bk_2"><span data-i18n="bk_2"><strong>Mauka KOA Classic</strong> <span class="bk-tag-urgent">已订核对</span><br>预订 <strong>#343484830</strong> · 周五 5:00pm 场 · 接驳 <strong>4:15pm</strong> Waikiki Beach Marriott（Paoakalani 入口）· <strong>勿选 Show-only</strong></span></label></li>
+      <li><span class="bk-idx" aria-hidden="true">3</span><input type="checkbox" id="chk-bk_3" data-check-key="bk_3"><label for="chk-bk_3"><span data-i18n="bk_3"><strong>Izakaya Uosan</strong> <span class="bk-tag-urgent">仅电话</span><br>☎ (808) 200-5077 · 周一晚 · 不接受私信</span></label></li>
+      <li><span class="bk-idx" aria-hidden="true">4</span><input type="checkbox" id="chk-bk_5" data-check-key="bk_5"><label for="chk-bk_5"><span data-i18n="bk_5"><strong>Diamond Head 徒步</strong> <span class="bk-tag-soon">需预约</span><br>recreation.gov（Summit Trail）· 周六 9am 场 · $5/人+费</span></label></li>
+      <li><span class="bk-idx" aria-hidden="true">5</span><input type="checkbox" id="chk-bk_6" data-check-key="bk_6"><label for="chk-bk_6"><span data-i18n="bk_6"><strong>冲浪课</strong> <span class="bk-tag-soon">提前预订</span><br>Mickey / Moku / HSA 三选一 · Waikiki 沙滩 · 周六 1–2pm · 首推 Mickey</span></label></li>
+      <li><span class="bk-idx" aria-hidden="true">6</span><input type="checkbox" id="chk-bk_skew" data-check-key="bk_skew"><label for="chk-bk_skew"><span data-i18n="bk_skew"><strong>Honolulu Skewer House</strong> <span class="bk-tag-soon">建议订位</span><br>567 Kapahulu Ave · 周六晚 · ☎ <strong>(808) 888-8680</strong></span></label></li>
+      <li><span class="bk-idx" aria-hidden="true">7</span><input type="checkbox" id="chk-bk_7" data-check-key="bk_7"><label for="chk-bk_7"><span data-i18n="bk_7"><strong>草裙舞课</strong><br>Hyatt Regency Waikiki · 周一 11am</span></label></li>
+      <li><span class="bk-idx" aria-hidden="true">8</span><input type="checkbox" id="chk-bk_8" data-check-key="bk_8"><label for="chk-bk_8"><span data-i18n="bk_8"><strong>Yoshitsune</strong><br>4/19（周日）晚 · 建议电话订位</span></label></li>
+      <li><span class="bk-idx" aria-hidden="true">9</span><input type="checkbox" id="chk-bk_9" data-check-key="bk_9"><label for="chk-bk_9"><span data-i18n="bk_9"><strong>珍珠港</strong> · <strong>USS 密苏里战舰</strong>门票 <span class="bk-tag-soon">建议提前购</span><br>visitpearlharbor.org/battleship-missouri · Arizona 纪念艇可选 · recreation.gov</span></label></li>
+      <li><span class="bk-idx" aria-hidden="true">10</span><input type="checkbox" id="chk-bk_10" data-check-key="bk_10"><label for="chk-bk_10"><span data-i18n="bk_10"><strong>19 号租车</strong><br>Enterprise / Budget / Alamo Waikiki · 确认 <strong>7:00am</strong> 可取车</span></label></li>
+    </ul>
+    <div class="mauka-confirm mauka-confirm--inline">
+      <div class="mauka-confirm-title" data-i18n="bk_mauka_title">Mauka 电子票与收据</div>
+      <div class="mauka-confirm-actions">
+        <a class="pack-doc-btn" data-mauka-tickets="1" data-i18n="d1_mauka_btn_tickets" href="#" hidden target="_blank" rel="noopener noreferrer">打开电子票（FareHarbor）</a>
+        <a class="pack-doc-btn mauka-secondary" href="assets/mauka-booking-confirmation.png" target="_blank" rel="noopener noreferrer" data-i18n="d1_mauka_btn_png">查看确认单截图（收据）</a>
+      </div>
+      <p class="mauka-confirm-hint mauka-tickets-hint" data-i18n="d1_mauka_hint">若需一键打开 FareHarbor「Go to your tickets」页面：把邮件里的该链接粘贴到本页 &lt;script&gt; 中的 <strong>MAUKA_TICKETS_URL</strong> 后保存/刷新即可显示上方深色按钮。</p>
+    </div>
+    <div class="mauka-confirm mauka-confirm--inline">
+      <div class="mauka-confirm-title" data-i18n="bk_kualoa_title">Kualoa Waiver 与收据</div>
+      <div class="mauka-confirm-actions">
+        <a class="pack-doc-btn" data-kualoa-waiver="1" data-i18n="d3_kualoa_btn_waiver" href="#" hidden target="_blank" rel="noopener noreferrer">打开 Kualoa Waiver（电子签）</a>
+        <a class="pack-doc-btn mauka-secondary" href="assets/kualoa-booking-confirmation.png" target="_blank" rel="noopener noreferrer" data-i18n="d3_kualoa_btn_png">查看确认单截图（收据）</a>
+      </div>
+      <p class="mauka-confirm-hint kualoa-waiver-hint" data-i18n="d3_kualoa_hint">若需一键打开确认邮件里的 Waiver 链接：把该完整 URL 粘贴到本页 &lt;script&gt; 中的 <strong>KUALOA_WAIVER_URL</strong> 后保存/刷新即可显示上方深色按钮。</p>
+    </div>
+    <p class="booking-note" data-i18n="bk_note">完整「准确产品名 + 官网」见行程页上方总表。D1 日料午餐按所选店规（排队/订位）；Mauka 为 <strong>KOA Classic</strong> 全包票。</p>
+  </div>
+</div>
+
+<div id="panel-packing" class="tab-panel" role="tabpanel" aria-labelledby="tab-packing" hidden>
+  <div class="booking-panel">
+    <div class="pack-section-title" data-i18n="pack_collab_title">打包清单（Google 文档）</div>
+    <p class="booking-note" data-i18n="pack_collab_intro">清单在下方 Google 文档中维护；内嵌为只读预览，编辑请用按钮在新标签打开（需文档共享权限）。</p>
+    <p id="pack-doc-setup-hint" class="booking-note pack-form-setup" data-i18n="pack_doc_setup">若未显示：请确认文档已共享，并在本页 &lt;script&gt; 中填写 PACK_DOC_EDIT_URL / PACK_DOC_PREVIEW_URL 后重新部署。</p>
+    <div id="pack-doc-active" hidden>
+      <a id="pack-doc-open" class="pack-doc-btn" href="#" target="_blank" rel="noopener noreferrer" data-i18n="pack_doc_btn">在 Google 文档中打开</a>
+      <p class="pack-iframe-note" data-i18n="pack_doc_iframe_note">若下方预览异常，请用上方按钮打开完整页面；部分环境可能限制内嵌。</p>
+      <iframe id="pack-doc-if" class="pack-form-iframe" title="Google 文档打包清单" hidden loading="lazy" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</div>
+<script>
+(function () {
+  /** 语言偏好存 localStorage；右上角「中文 / EN」切换，全文 data-i18n + I18N_EN */
+  var STORAGE_KEY = 'hawaii_oahu_itinerary_lang';
+  var CHECK_KEY = 'hawaii_oahu_checks_v3';
+  /** Google 文档：打包清单标签页（编辑，新标签打开） */
+  var PACK_DOC_EDIT_URL = 'https://docs.google.com/document/d/1N-616a6r5YAnN5FDbk1K6fnReAA6ADwBbMt4vKE9D7I/edit?tab=t.gsp9jwyouzj';
+  /** 同一标签页的预览（iframe），由 /edit?tab=… 改为 /preview?tab=… */
+  var PACK_DOC_PREVIEW_URL = 'https://docs.google.com/document/d/1N-616a6r5YAnN5FDbk1K6fnReAA6ADwBbMt4vKE9D7I/preview?tab=t.gsp9jwyouzj';
+  /** 是否显示内嵌预览 */
+  var PACK_DOC_USE_IFRAME = true;
+  /** FareHarbor 确认邮件里的「Go to your tickets」完整链接；填写后行程页与预约 Tab 会显示深色按钮 */
+  var MAUKA_TICKETS_URL = '';
+  /** Kualoa 确认邮件里「Waiver」按钮的完整链接；填写后 D3 与预约 Tab 会显示深色按钮 */
+  var KUALOA_WAIVER_URL = '';
+
+  var I18N_EN = {
+    doc_title: "👑 Wanting and Qingyue's Oahu Trip",
+    hero_title: "<span class=\"crown-sparkle\">👑</span>Wanting and Qingyue's Oahu Princess Trip",
+    tab_itinerary: 'Trip',
+    tab_bookings: 'Book',
+    tab_packing: 'Pack',
+    aria_tablist: 'Page sections',
+    aria_lang: 'Language',
+    leg_must: 'Must-do',
+    leg_opt: 'Optional',
+    leg_food: 'Food',
+    leg_nature: 'Nature',
+    leg_culture: 'Culture',
+    leg_book: 'Ticket / table reservation required',
+    leg_wait: 'Remote waitlist or queue (not a fixed seat ticket)',
+    leg_venue_req: 'Light-blue “Need-to-know” boxes = official or venue <strong>hard rules / important notes</strong> for that stop (items tagged <span class="req-crit">Important</span> first).',
+    tag_chase_pts: 'CHASE pay',
+    leg_chase_pts: 'Use an eligible Chase card at checkout to earn category rewards (final posting depends on <strong>MCC + your card rules</strong>).',
+    tag_chase_xrt: 'CSR Exclusive Tables',
+    leg_chase_xrt: 'Sapphire Reserve <strong>Exclusive Tables</strong> benefits only apply to restaurants currently listed on OpenTable: <a href="https://www.opentable.com/sapphire-reserve-dining" target="_blank" rel="noopener">check list</a> before you go.',
+    tag_res_web: 'Book online',
+    leg_res_web: 'Book online via official sites or partner platforms.',
+    tag_res_phone: 'Phone res.',
+    leg_res_phone: 'Phone reservation is the main channel.',
+    tag_walkin: 'Walk-in / queue',
+    leg_walkin: 'Mainly walk-in / queue.',
+    d1_mall_req: '<div class="venue-req-hd">Ala Moana Center · mall + dining basics</div><ul><li><span class="req-crit">Important</span>Allergies (gluten, nuts, shellfish, etc.)—tell <strong>that restaurant’s staff</strong> before you order; policies differ by vendor.</li><li>No-smoking/pets/strollers/hours follow posted mall rules; don’t block walkways with luggage.</li></ul>',
+    d1_mauka_req: '<div class="venue-req-hd">Mauka Warriors (KOA Classic) · verify before you go</div><ul><li><span class="req-crit">Important</span>Shuttle pickup: <strong>Waikiki Beach Marriott · Paoakalani entrance · 4:15pm</strong> (don’t mix up other Hyatt-area stops).</li><li><span class="req-crit">Important</span>Check-in address <strong>91-1780 Midway St</strong> (not the old Hawaii Country Club).</li><li>Alcohol rules follow <strong>Hawaii legal drinking age</strong> + ticket terms (confirm on-site/email).</li><li>Outdoor + fire-show zones: light jacket; follow fencing/staff safety cues; dietary/allergy—check site or call ahead.</li></ul>',
+    d2_kcc_req: '<div class="venue-req-hd">KCC Farmers Market · basics</div><ul><li><span class="req-crit">Important</span><strong>Saturday only</strong>; hard close at <strong>11:00am</strong>—don’t arrive too late.</li><li>Cash/small bills help; keep walkways clear in lines.</li></ul>',
+    d2_diamond_req: '<div class="venue-req-hd">Diamond Head State Monument · know before you hike</div><ul><li><span class="req-crit">Important</span>Enter on your <strong>reserved time</strong> (Summit Trail via recreation.gov)—don’t confuse with random third-party “shuttle only” products.</li><li><span class="req-crit">Important</span><strong>Bag bans/limits</strong> apply (read posted rules); typical carry is <strong>small pack + water</strong>; stay on trail/ranger instructions.</li><li>Heat + wind + stairs: hydrate; stop if you feel unwell.</li></ul>',
+    d2_surf_req: '<div class="venue-req-hd">Surf lesson (Mickey / Moku / HSA) · confirm on each school’s site/email</div><ul><li><span class="req-crit">Important</span>Follow your <strong>confirmation email</strong> for meet time, pin, and cancel/reschedule rules.</li><li><span class="req-crit">Important</span>Lessons usually screen <strong>swim ability + health</strong>; don’t force it if injured, ill, or if lifeguards flag hazardous surf.</li><li>Rash/zinc + coach signals; waterproof your own electronics.</li></ul>',
+    d2_skew_req: '<div class="venue-req-hd">Honolulu Skewer House · before you go</div><ul><li><span class="req-crit">Important</span>Busy nights: <strong>call ahead</strong> <strong>☎ (808) 888-8680</strong> (verify live); hours/prices per restaurant.</li><li>Tabletop grill heat—watch burns/clothing; indoor smoking rules per venue.</li></ul>',
+    d3_lanikai_req: '<div class="venue-req-hd">Lanikai / Kailua beach · public-sand safety</div><ul><li><span class="req-crit">Important</span>If unguarded, don’t swim <strong>far out</strong>; watch for rip currents and sharp reef.</li><li>Respect private property lines; pack out trash.</li></ul>',
+    d3_rental_req: '<div class="venue-req-hd">Waikiki rental pickup · typical contract notes</div><ul><li><span class="req-crit">Important</span>Driver needs a <strong>valid license + credit card</strong>; age rules, extra drivers, and international-license quirks are per <strong>the vendor you booked</strong>.</li><li>Insurance deductible, fuel/EV return, late return—confirm before you sign.</li></ul>',
+    d3_utv_req: '<div class="venue-req-hd">Kualoa “2-Hour UTV Ride Along Tour” · official hard / important notes</div><p style="margin:0 0 6px;font-size:11px;opacity:.95">Clicking <strong>Continue</strong> means <strong>every participant</strong> meets the tour requirements (Kualoa site). Below summarizes Restrictions &amp; Requirements + a short <strong>cancellation summary</strong>—verify wording on your confirmation email.</p><ul><li><span class="req-crit">Required</span>Arrive at the <strong>Ticket Office</strong> for check-in <strong>45 minutes before</strong> your scheduled tour time (this itinerary: <strong>by 9:30am</strong> for a <strong>10:15am</strong> departure).</li><li><span class="req-crit">Required</span>Show <strong>photo ID</strong> that matches the name on your reservation at Ticket Office check-in.</li><li><span class="req-crit">Important</span><strong>You will not drive</strong>—a Kualoa guide drives the <strong>UTV Raptor</strong>; everyone rides.</li><li><span class="req-crit">Important</span><strong>Minimum age 5</strong>; guests <strong>17 &amp; under</strong> must be with an <strong>adult</strong> on all tours.</li><li><span class="req-crit">Important</span>When booking online, <strong>one vehicle is reserved for every 4 guests</strong> included in the reservation (follow your confirmation).</li><li><span class="req-crit">Important</span><strong>Helmets are provided and must be worn at all times.</strong></li><li><span class="req-crit">Important</span>At check-in, staff verify tour restrictions; <strong>anyone who does not meet requirements cannot continue</strong>.</li><li><span class="req-crit">Important</span>Tour is <strong>very bumpy</strong>—<strong>not recommended</strong> if <strong>pregnant</strong> or with <strong>existing/recurring injuries</strong>.</li><li><span class="req-crit">Recommended</span><strong>Covered shoes</strong>.</li><li><span class="req-crit">Important</span><strong>Liability waivers</strong> apply; booking on kualoa.com means your card is charged in full. <strong>Full refund / changes</strong> (if available) require calling Kualoa <strong>at least 48 hours before</strong> your tour date/time at <strong>808-237-7321</strong> (phone lines <strong>7:30am–4:30pm HST</strong>). No-shows, missing required check-in, or failing to call <strong>48+ hours ahead</strong> to cancel = <strong>no refunds</strong>. Reservations made <strong>within 48 hours</strong> of tour time and <strong>same-day</strong> reservations are <strong>final</strong>.</li></ul>',
+    d3_byodo_req: '<div class="venue-req-hd">Byodo-In / Valley of the Temples · memorial park etiquette</div><ul><li><span class="req-crit">Important</span>Coming <strong>straight from UTV</strong>: finish <strong>face/hands wipe + outfit change</strong> at the <strong>restrooms / in your parked car</strong> before entering the pavilion/graves core—out of respect for the site and other visitors.</li><li><span class="req-crit">Important</span><strong>Pay gate admission on site</strong> (amount at window); hours on <a href="https://www.byodo-in.com/" target="_blank" rel="noopener">byodo-in.com</a>.</li><li><span class="req-crit">Important</span>Active cemetery/memorial: <strong>quiet voices</strong>, <strong>no climbing</strong> structures/markers; cover shoulders; avoid very short bottoms.</li><li>Cash helps; bugs/sun—plan repellent + sunscreen; pet rules per posted signs.</li></ul>',
+    d3_turtle_req: '<div class="venue-req-hd">Laniakea sea turtles · wildlife &amp; law</div><ul><li><span class="req-crit">Important</span>Honu are <strong>protected</strong>: <strong>no touching, riding, or feeding</strong>; no harassing with flash—keep <strong>legal distance</strong> (fines possible).</li><li><span class="req-crit">Important</span>Street parking: never block <strong>fire hydrants</strong> or sightlines; rough surf—don’t risk wading in blindly.</li><li>Follow volunteers/traffic help; pack out trash.</li></ul>',
+    d3_yosh_req: '<div class="venue-req-hd">Yoshitsune · house rules</div><ul><li><span class="req-crit">Important</span><strong>Reserve ahead</strong>: <strong>☎ (808) 926-5616</strong>, or try partner <a href="https://autoreserve.com/restaurants/mcPpL8hoLjo6AUtD3y2p" target="_blank" rel="noopener">AutoReserve</a> (confirm with the restaurant what’s “official”). Don’t assume walk-in at peak.</li><li>Keep voices low; pace alcohol; payment rules per restaurant.</li></ul>',
+    d4_nalu_req: '<div class="venue-req-hd">Nalu Health Bar · quick notes</div><ul><li>Declare allergies (nuts/dairy/etc.) before ordering; lines possible at rush.</li><li>Tipping/card policy at checkout.</li></ul>',
+    d4_hula_req: '<div class="venue-req-hd">Hyatt hula / cultural class · hotel program rules</div><ul><li><span class="req-crit">Important</span>Use the hotel’s published <strong>schedule / front desk</strong> for exact title, time, capacity, and cancel rules.</li><li><span class="req-crit">Important</span>Physical activity: stop if you feel unwell; medical limits—use your judgment.</li></ul>',
+    d4_pearl_req: '<div class="venue-req-hd">Pearl Harbor National Memorial · security &amp; tone</div><ul><li><span class="req-crit">Important</span><strong>Large bags/backpacks restricted</strong> (posted size rules); easiest is <strong>small bag + ID + water</strong>.</li><li><span class="req-crit">Important</span><strong>USS Missouri</strong> vs <strong>Arizona Memorial</strong> are <strong>different tickets/lines</strong>; Arizona is timed and tight—arrive for your slot.</li><li>Memorial behavior: follow posted photo/food/noise rules and ranger directions.</li></ul>',
+    d4_uosan_req: '<div class="venue-req-hd">Izakaya Uosan · booking policy</div><ul><li><span class="req-crit">Important</span><strong>Phone reservations only</strong> <strong>(808) 200-5077</strong>; <strong>closed Wednesdays</strong>.</li><li><span class="req-crit">Important</span>Fine-dining izakaya: cancellation/late/no-show rules, dress, or minimums—confirm with the restaurant; no outside food/drink.</li></ul>',
+    d5_airport_req: '<div class="venue-req-hd">HNL · before security</div><ul><li><span class="req-crit">Important</span>Liquids follow <strong>TSA 3-1-1</strong>; <strong>power banks / lithium batteries in carry-on only</strong>—not checked; use in-flight per crew rules.</li><li>Knives/large sunscreen: follow TSA + airline checked/carry rules; budget checked-bag queue time.</li></ul>',
+    tag_book: 'Book',
+    tag_wait: 'Waitlist',
+    car_plan_title: 'Car rental plan',
+    c_day_417: 'Apr 17 (Fri)',
+    c_day_418: 'Apr 18 (Sat)',
+    c_day_419: 'Apr 19 (Sun)',
+    c_day_420: 'Apr 20 (Mon)',
+    c_day_421: 'Apr 21 (Tue)',
+    c_det_417: 'No rental · all Uber after landing, ~US$55–80 (HNL→Ala Moana→Hyatt; Mauka round-trip shuttle already in ticket—walk ~8–12 min Hyatt → Marriott Paoakalani pickup)',
+    c_det_418: 'Walk + Uber hops (Kapahulu, etc.), ~US$45–65',
+    c_det_419: 'One-day rental · Enterprise / Budget Waikiki, ~US$60–90/day',
+    c_det_420: 'No rental · all Uber, ~US$60–70',
+    c_det_421: 'No rental · Uber to airport ~US$35',
+    bdg_nocar: 'No car needed',
+    bdg_1day: 'One-day rental',
+    meal_label: 'Dining:',
+    wear_pack_title: 'What to wear · what to bring (today’s plan)',
+    wear_pack_sub: '<strong>On this page:</strong> directly <strong>under</strong> the gray “Dining” strip above; cross-check the <strong>route bar + timeline</strong> further down the same day card.',
+    d1_wear_pack: '<ul><li><strong>By stops</strong>: <strong>HNL→Uber</strong> comfy travel clothes + walkable shoes; ID/phone/power bank on you. <strong>Ala Moana</strong> lots of walking + A/C—light layer; small tote. <strong>Hyatt</strong> change into Aloha; shoes you can walk 8–12 min to Marriott pickup. <strong>Mauka evening</strong> ocean breeze—light jacket; leave big bags at the hotel.</li><li><strong>Wear (one-liner)</strong>: breathable daytime layers + slightly nicer casual for luau.</li><li><strong>Bring</strong>: wallet, packable umbrella/shell, empty water bottle; follow airline rules for power banks.</li><li><strong>Spares</strong>: socks + a second light set (sweat / food splashes).</li><li><strong>Hair dryer</strong>: use the in-room hotel dryer—usually no need to pack your own.</li></ul>',
+    d2_wear_pack: '<ul><li><strong>By stops</strong>: <strong>KCC</strong> light layers + hat + small bills; <strong>Diamond Head</strong> trail shoes, water, sunscreen; <strong>Waikiki lunch</strong> casual; <strong>Waikiki surf meet</strong> (Mickey/Moku/HSA—pin in email) swimsuit + zinc/sunscreen; <strong>back at Hyatt</strong> shower + <strong>blow-dry</strong> + dry clothes; <strong>sunset</strong> optional light layer; <strong>Kapahulu Skewer</strong> casual but not sloppy.</li><li><strong>Wear (one-liner)</strong>: sporty/sun morning → water afternoon → dry evening.</li><li><strong>Bring</strong>: backpack/sling, small dry sack, towel, phone dry pouch, sunscreen.</li><li><strong>Spares</strong>: roll <strong>dry underwear, tee, shorts, socks</strong>—after surf, hotel first; plastic bag for wet suits.</li></ul>',
+    d3_wear_pack: '<ul><li><strong>By stops</strong>: <strong>Waikiki pickup</strong> license + cards + phone mount; <strong>Kailua/Lanikai</strong> swimsuit or shorts + sandals, sun gear, towel (keep it <strong>light</strong> for wading + shoreline photos); <strong>Kualoa UTV</strong> <strong>covered shoes (recommended)</strong>, dark durable pants/shorts, shades; <strong>Byodo-In</strong>—there’s <strong>no shower</strong> between ranch and gate: in the parking lot, change into a <strong>full clean “temple layer”</strong> + lighter shoes (<strong>shoulders covered</strong>); <strong>Laniakea</strong> hat + easy walking shoes; <strong>return car→Hyatt</strong> shower + <strong>hair dryer</strong>; <strong>Yoshitsune</strong> neat casual.</li><li><strong>Wear (one-liner)</strong>: beach + dirty UTV clothes + <strong>packed-clean set for the memorial park</strong>.</li><li><strong>Bring</strong>: water bottle, <strong>large wet wipes</strong>, cash for gate, camera, <strong>big zip bags</strong> (isolate muddy UTV clothes from seats).</li><li><strong>Spares</strong>: a <strong>UTV→Byodo</strong> clean shirt + pants + socks + shoes; optional extra set if you swam at Lanikai.</li></ul>',
+    d4_wear_pack: '<ul><li><strong>By stops</strong>: <strong>Nalu</strong> easy walk clothes; <strong>Hyatt hula</strong> moveable shorts/tee—sweaty? quick room rinse; <strong>Waikiki lunch</strong> still easy/packable; <strong>Pearl Harbor</strong> lots of walking → <strong>comfortable sneakers</strong>, <strong>small bag + water</strong> for security; <strong>Uosan</strong> smart-casual; hotel <strong>hair dryer</strong> for touch-ups.</li><li><strong>Wear (one-liner)</strong>: casual athletic base, step up one notch for dinner.</li><li><strong>Bring</strong>: ID easy to reach, power bank, tissues; avoid huge packs at Pearl Harbor.</li><li><strong>Spares</strong>: fresh underwear/tee after hula; light layer for A/C or evening breeze.</li></ul>',
+    d5_wear_pack: '<ul><li><strong>By stops</strong>: <strong>Hotel morning</strong> comfy, easy on/off, suitcase-friendly; <strong>checkout→Uber</strong> keep ID/phone handy; <strong>HNL</strong> flight layers (cabins cold), TSA-friendly shoes.</li><li><strong>Wear (one-liner)</strong>: “road comfort + cabin warmth” in layers.</li><li><strong>Bring</strong>: boarding pass/mobile, power bank, empty bottle (fill after security).</li><li><strong>Spares</strong>: pack night before; optional spare tee for coffee spills.</li><li><strong>Hair dryer</strong>: finish at the hotel before you seal the suitcase.</li></ul>',
+    tag_must: 'Must-do',
+    tag_opt: 'Optional',
+    tag_food: 'Food',
+    tag_nature: 'Nature',
+    tag_culture: 'Culture',
+    tag_must_eat: 'Must-try',
+    d1_title: 'Apr 17 (Fri) — Arrival + Ala Moana Japanese lunch + Mauka KOA luau',
+    d1_sub: 'Lands 11:05am · HNL → Ala Moana area lunch → check-in at Hyatt → <strong>KOA Classic</strong> (buffet dinner included)',
+    d1_ml1: '🍱 Lunch — Ala Moana Japanese (Goma Tei noodles / Kamukura on The Lanai)',
+    d1_ml2: '🌺 Dinner — Mauka <strong>KOA Classic</strong> includes Polynesian buffet + main show',
+    d1_mauka_title: 'Mauka Warriors — booking confirmation (#343484830)',
+    d1_mauka_body: '<p><strong>Confirmation</strong> #343484830 · <strong>Package</strong> KOA Classic Package (online, <em>rear seating</em>)</p><p><strong>Party / hours</strong> 2 adults · main run about <strong>5:00–9:00pm</strong> HST</p><p><strong>Shuttle pickup</strong> <strong>4:15pm</strong> at <strong>Waikiki Beach Marriott</strong>, <strong>Paoakalani Ave entrance</strong> (not Hyatt—follow email). Round-trip transport included (~<strong>US$30/p</strong>, US$60 for two).</p><p><strong>Venue</strong> 91-1780 Midway St, Kapolei, HI 96707 · <strong>Do not go to</strong> the old Hawaii Country Club address.</p><p><strong>Check-in / doors</strong> aim to check in by ~<strong>4:45pm</strong> for the full package; grounds open <strong>5:00pm</strong>.</p><p><strong>Special request:</strong> note asks for best front/window pair; ticket still says rear section—final seats on site.</p><p><strong>Paid breakdown:</strong> adults US$127.30 each (before processing) · code <strong>Aloha30</strong> −US$83.40 · transport US$60 · taxes/fees US$27.28 · <strong>total charged US$281.88</strong> (verify on your card).</p>',
+    d1_mauka_btn_tickets: 'Open e-tickets (FareHarbor)',
+    d1_mauka_btn_png: 'View confirmation screenshot (receipt)',
+    d1_mauka_hint: 'To show the black button: paste the full FareHarbor “Go to your tickets” URL into <strong>MAUKA_TICKETS_URL</strong> in this page’s &lt;script&gt;, save, and refresh.',
+    d3_kualoa_title: 'Kualoa Ranch — booking confirmation (KRHI012604130550)',
+    d3_kualoa_body: '<p><strong>Order</strong> KRHI012604130550 · <strong>Product</strong> 2-Hour UTV Ride Along Tour (e-commerce, paid in full)</p><p><strong>Date / party</strong> Sun Apr 19, 2026 · guide drives, guests ride · <strong>~10:15am</strong> tour time · adults ×2</p><p><strong>Check-in</strong> Arrive at the ranch <strong>Ticket Office</strong> <strong>45 minutes before</strong> your scheduled tour time—this confirmation: <strong>by 9:30am</strong> (matches the red banner on the receipt). Bring <strong>photo ID</strong> matching the reservation name.</p><p><strong>Totals</strong> Subtotal <strong>US$309.90</strong> · taxes/fees <strong>US$15.68</strong> · <strong>order total US$325.58</strong> (verify on your card). Order created Apr 12, 2026.</p><p><strong>Before arrival</strong> Complete the online <strong>waiver</strong> to save time; helmets are provided and required at all times.</p>',
+    d3_kualoa_btn_waiver: 'Open Kualoa waiver (e-sign)',
+    d3_kualoa_btn_png: 'View confirmation screenshot (receipt)',
+    d3_kualoa_hint: 'To show the black button: paste the full waiver URL from your confirmation email into <strong>KUALOA_WAIVER_URL</strong> in this page’s &lt;script&gt;, save, and refresh.',
+    bk_kualoa_title: 'Kualoa waiver & receipt',
+    bk_mauka_title: 'Mauka e-tickets & receipt',
+    route_d1: '<span class="route-stop">HNL Airport</span><span class="route-arrow">→</span><span class="route-stop">Ala Moana lunch</span><span class="route-arrow">→</span><span class="route-stop">Hyatt check-in</span><span class="route-arrow">→</span><span class="route-stop">Marriott pickup</span><span class="route-arrow">→</span><span class="route-stop">Mauka Warriors</span><span class="route-arrow">→</span><span class="route-stop">Return to Waikiki</span>',
+    d1_t1: 'Arrive HNL — Uber toward Ala Moana for lunch',
+    d1_n1: 'Luggage with you; immigration + baggage varies a lot—<strong>don’t force “eat the second you land.”</strong> A lighter noodle meal saves room for the Mauka buffet; then check in at Hyatt',
+    d1_u1: 'Uber: HNL → Ala Moana Center, ~12–22 min / ~US$20–30 (depends on immigration & baggage claim)',
+    d1_t2: 'Japanese lunch (Ala Moana area)',
+    d1_n2: 'If you skip tonkatsu set meals: try <strong>Goma Tei Ramen</strong> (Ala Moana <strong>Ste 1215</strong>; tantan / shoyu / udon—many bowls land around <strong>US$14–22</strong> before tax/tip; check <a href="https://www.gomatei.com/" target="_blank" rel="noopener">gomatei.com</a> for promos/happy hour). Backup: <strong>Kamukura</strong> on <strong>Level 2 The Lanai</strong> (ramen/bento; opens early). Evening: booked <strong>Mauka KOA (Classic Package)</strong>—rear section + shell lei + 1 drink ticket + buffet + main show (per confirmation email)',
+    d1_u2: 'Uber: Ala Moana → Hyatt Waikiki, ~12–18 min / ~US$15–22',
+    d1_t3: 'Check in at Hyatt — luggage + Aloha outfit',
+    d1_n3: 'Even with a slightly late lunch you still have <strong>1.5h+</strong> to shower, settle, or stroll near Waikiki; aim to leave for the Marriott pickup by <strong>3:10pm</strong>',
+    d1_t4: 'Walk to Luau shuttle pickup (Marriott side)',
+    d1_n4: '~8–12 min walk from Hyatt to <strong>Waikiki Beach Marriott</strong>, <strong>Paoakalani Ave entrance</strong>; board by <strong>4:15pm</strong> (booking <strong>#343484830</strong>). Don’t mix up other Hyatt-area stops.',
+    d1_t4b: 'Shuttle departs for Mauka (Kapolei)',
+    d1_n4b: 'Drive time traffic-dependent. Check in at <strong>91-1780 Midway St</strong> per confirmation (<strong>not</strong> the old Hawaii Country Club).',
+    d1_t5: 'Mauka Warriors Luau — KOA Classic · about 5:00–9:00pm',
+    d1_n5: '<strong>KOA Classic</strong> check-in from ~<strong>4:45pm</strong>; grounds open <strong>5:00pm</strong>. Typical flow (on-site): shell lei → culture (hula / kava / tattoo / spear) → umu pig → Polynesian buffet → main show (warrior + fire + hula) → ends ~<strong>9:00pm</strong>',
+    d1_u3: 'Included shuttle back to Waikiki — often ~9:30–10pm hotel-side',
+    d1_t6: 'Back to hotel — wind down',
+    d1_n6: 'KCC at 7:15am tomorrow—sleep early',
+    day_map_lbl: 'Map: open today’s route for free (new tab)',
+    day_map_osm_caption: 'Free map (OpenStreetMap)—pan & zoom. For turn-by-turn directions, use the Google Maps link above.',
+    d1_uber_total: 'Uber/Lyft ballpark: ~US$45–65 (HNL→Ala Moana→Hyatt; Mauka round-trip shuttle already bundled—no extra “per ride” if you walk to the Marriott pickup)',
+    d2_title: 'Apr 18 (Sat) — KCC + Diamond Head + Waikiki lunch + surf + sunset + Skewer',
+    d2_sub: 'East-side beach day · after surf, <strong>back to the hotel</strong> for a real shower + dry clothes before sunset / Kapahulu Skewer (don’t stay soaked)',
+    d2_ml1: '🥣 Breakfast — KCC Farmers Market',
+    d2_ml2: '🍱 Lunch — Waikiki light bite / takeout (e.g. Leonard\'s)',
+    d2_ml4: '🔥 Night — Honolulu Skewer House',
+    route_d2: '<span class="route-stop">KCC market</span><span class="route-arrow">→</span><span class="route-stop">Diamond Head</span><span class="route-arrow">→</span><span class="route-stop">Waikiki lunch</span><span class="route-arrow">→</span><span class="route-stop">Surf lesson</span><span class="route-arrow">→</span><span class="route-stop">Hotel shower & change</span><span class="route-arrow">→</span><span class="route-stop">Sunset</span><span class="route-arrow">→</span><span class="route-stop">Skewer</span>',
+    d2_uber_total: 'Uber/Lyft ballpark: ~US$30–50 (KCC hops, Diamond→Waikiki, evening Kapahulu Skewer; lots is walkable)',
+    d2_t1: 'KCC Farmers Market — breakfast',
+    d2_n1: 'Sat only 7:30–11am; closes at 11 sharp. Oxtail pho, acai bowl, tropical fruit. Walk or Uber ~US$10',
+    d2_u1: 'Walk 500 m → Diamond Head entrance',
+    d2_t2: 'Diamond Head summit hike',
+    d2_n2: 'Book online in advance (US$5/person). ~1.5h round trip, panoramic Waikiki. Go early to beat heat',
+    d2_u2: 'Uber: Diamond Head → Waikiki lunch zone, ~12–15 min / ~US$12–18',
+    d2_t3: 'Waikiki lunch (light / takeout)',
+    d2_n3: 'Keep lunch <strong>quick / takeout</strong>. Options: bites near the hotel, musubi, or Leonard\'s malasadas (Kapahulu—same strip as Skewer later) to save stomach for surf',
+    d2_t4: 'Surf lesson (Waikiki Beach)',
+    d2_n4: 'Meet on <strong>Waikiki Beach</strong> (walking distance—confirm the pin in each school’s email): <strong>Mickey Surf School</strong>, <strong>Moku Hawaii</strong>, or <strong>Hawaii Surfing Academy (HSA)</strong>. Book a <strong>Sat 1pm or 2pm group lesson</strong>. <strong>Top pick Mickey</strong>: often includes free video + photos—best keepsake value. <strong>Moku</strong>: great coach vibe; add-on photo ~US$100/hr. <strong>HSA</strong>: often includes gear + photos but usually the priciest tier—verify each site. <strong>Route fit</strong>: morning KCC + Diamond sits southeast; after lunch you’re back in <strong>Waikiki</strong>—afternoon surf stays on <strong>hotel-walking-distance</strong> sand, so the day lines up cleanly.',
+    d2_u4: 'Walk <strong>back to the hotel</strong>: change out of a wet rash guard / suit, <strong>shower, dry hair, full dry outfit</strong>; then nap or a light Kalakaua stroll—avoid sitting in AC soaking wet',
+    d2_t5: 'Back to hotel — shower & change (post-surf “must”)',
+    d2_n5: 'Treat this as <strong>mandatory logistics</strong>: salt/sand + soaked clothes make malls/sunset/Skewer miserable. Rinse gear in the bathroom or use hotel laundry if needed—show up to dinner dry and comfortable',
+    d2_t7: 'Waikiki Beach sunset',
+    d2_n7: 'Finish hotel shower + dry clothes <strong>before</strong> sunset; April sunset ~<strong>6:50pm</strong>—walk to the sand or Kalakaua; no extra drive needed',
+    d2_u5: 'Uber: Waikiki → Honolulu Skewer House (567 Kapahulu Ave), ~8–12 min / ~US$10–14',
+    d2_t8: 'Honolulu Skewer House — late-night skewers',
+    d2_n8: '567 Kapahulu Ave, 5–11pm. Table-grill skewers; call ahead. ~US$80/person; Uber back to the hotel after',
+    d3_title: 'Apr 19 (Sun) — Lanikai + Kualoa UTV + Byodo-In + turtles + Yoshitsune',
+    d3_sub: 'Lanikai wade/photos → <strong>Kualoa 2-Hour UTV</strong> (<strong>9:30am Ticket Office check-in</strong> · <strong>10:15am departure</strong>) → <strong>Byodo-In</strong> (Valley of the Temples, Kaneohe—right after Kualoa) → Laniakea turtles → return car → <strong>Yoshitsune</strong> dinner',
+    d3_ml2: '🍣 Dinner — Yoshitsune',
+    route_d3: '<span class="route-stop">Pick up car</span><span class="route-arrow">→</span><span class="route-stop">Lanikai</span><span class="route-arrow">→</span><span class="route-stop">Kualoa UTV</span><span class="route-arrow">→</span><span class="route-stop">Byodo-In</span><span class="route-arrow">→</span><span class="route-stop">Laniakea</span><span class="route-arrow">→</span><span class="route-stop">Return car</span><span class="route-arrow">→</span><span class="route-stop">Yoshitsune</span>',
+    d3_uber_total: 'Mostly rental driving; Uber ballpark ~US$0–15 (short hops after drop-off if needed)',
+    d3_t1: 'Pick up rental (Waikiki)',
+    d3_n1: 'Enterprise / Budget / Alamo—book online; confirm <strong>7:00</strong> pickup. Counter + inspection often <strong>15–25 min</strong>. With <strong>Kualoa 2-Hour UTV</strong> (<strong>10:15am</strong> departure, <strong>9:30am Ticket Office</strong> check-in), be <strong>on time at the counter</strong> and head <strong>straight east</strong> after keys—no Waikiki detours',
+    d3_t2: 'Lanikai Beach — morning wade & photos',
+    d3_n2: '<strong>Is 9:30am Ticket Office check-in realistic?</strong> Yes—<strong>tight but workable</strong> (your <strong>10:15am</strong> departure is later—don’t mix up the two). Finish rental and be rolling east by ~<strong>7:00–7:25am</strong>; treat Lanikai as a <strong>short wade/photo stop</strong>. <strong>Leave Kailua by ~8:25am latest</strong> for Kualoa (often <strong>35–40 min</strong> + AM traffic + on-site lines; after ~8:30am risk jumps). If the rental counter runs long or you want more beach time, pick another <strong>midday</strong> Kualoa time on the site instead. If you swim, rinse feet and change before driving.',
+    d3_dr1: 'Drive: Kailua/Lanikai → Kualoa Ranch, ~35–40 min (H3; AM traffic varies)',
+    d3_t3: 'Kualoa Ranch — 2-Hour UTV Ride Along (10:15am departure · 9:30am Ticket Office check-in)',
+    d3_n3: 'Official tour name: <strong>2-Hour UTV Ride Along Tour</strong>. This booking paid <strong>US$325.58</strong> total (subtotal ~US$309.90 + taxes/fees ~US$15.68—verify on your card). Guide drives the <strong>UTV Raptor</strong>; guests ride; runs in rain—bring sunglasses. Plan to exit the ranch flow around <strong>~12:15pm</strong> (2hr + change buffer—confirm on-site). Rules, ID, waiver, cancellation: <strong>blue “Need-to-know” box below</strong> + confirmation email.',
+    d3_dr2: 'Drive: Kualoa Ranch → Byodo-In, ~20–30 min (windward). <strong>At the park lot, don’t rush straight in</strong>: use restrooms to <strong>clean hands/face</strong>; change in the car into your <strong>packed-clean outfit + lighter shoes</strong> (UTV dust/mud is normal—there’s <strong>no shower</strong> here, so wipes + a full clothing swap = “temple-ready”). Stash muddy clothes in a <strong>sealed bag</strong>.',
+    d3_t5: 'Byodo-In Temple (Valley of the Temples)',
+    d3_n5: '<strong>UTV → Byodo:</strong> you’ll look dusty after Kualoa—that’s fine if you <strong>change + wipe down</strong> before entering sacred space (not a hotel shower). Park, hit <strong>restrooms / car trunk</strong>, put on your <strong>clean “memorial-park layer”</strong> (see drive note + packing list: <strong>zip bag for dirty clothes</strong>), then buy tickets. Slotted <strong>after ~12:15pm UTV</strong>: short hop to <strong>Kaneohe / Ahuimanu</strong>; timeline uses <strong>~12:45pm at the gate</strong> as a reference, then North Shore turtles. <strong>Pay admission on site</strong> (often ~US$5–10pp—verify window). Hours on <a href="https://www.byodo-in.com/" target="_blank" rel="noopener">byodo-in.com</a>. Plan <strong>30–45 min</strong>; keep voices low. If UTV runs late, shorten here—<strong>don’t</strong> blow the turtle + return-car buffer.',
+    d3_dr4: 'Drive: Byodo-In → Laniakea Beach, ~50–65 min (often via H2; traffic varies)',
+    d3_t4: 'Laniakea Beach — sea turtles',
+    d3_n4: 'Turtles often more active ~2–4pm; volunteers on site. Street parking—watch hydrants. <strong>Save energy</strong>: <strong>20–35 min</strong> can be enough before the long drive back to Waikiki.',
+    d3_dr5: 'Drive: Laniakea → Waikiki rental return, ~55–75 min (H2/H1, traffic varies)',
+    d3_t7: 'Return rental — back to hotel to shower & change',
+    d3_n7: 'Even if you changed for Byodo, <strong>shoe soles may still carry dust</strong>—back at Hyatt, <strong>shower + change</strong> before Yoshitsune is safest. If you got <strong>wet/sandy</strong> at Lanikai / turtle beach: same—shower after car return, not in AC at the izakaya in damp clothes.',
+    d3_t8: 'Dinner: Yoshitsune',
+    d3_n8: 'Walkable; open until 10pm. Must-try: miso / misoyaki butterfish. Reserve ahead',
+    d4_title: 'Apr 20 (Mon) — Nalu breakfast + hula + Pearl Harbor + Izakaya Uosan',
+    d4_sub: 'Hula 11am · Pearl Harbor afternoon · Uosan dinner · all Uber',
+    d4_ml1: '🥣 Breakfast — Nalu Health Bar Waikiki',
+    d4_ml2: '🍶 Dinner — Izakaya Uosan',
+    route_d4: '<span class="route-stop">Nalu breakfast</span><span class="route-arrow">→</span><span class="route-stop">Hula 11am</span><span class="route-arrow">→</span><span class="route-stop">Lunch on your own</span><span class="route-arrow">→</span><span class="route-stop">Pearl Harbor (pm)</span><span class="route-arrow">→</span><span class="route-stop">Izakaya Uosan</span>',
+    d4_uber_total: 'Uber/Lyft ballpark: ~US$60–75 (Waikiki↔Pearl Harbor + Pearl Harbor→Uosan + return to hotel)',
+    d4_t1: 'Nalu Health Bar Waikiki — breakfast',
+    d4_n1: '226 Lewers St, walking distance, opens 7am. 2023 Best of Honolulu acai bowl; organic; add local coffee',
+    d4_t3: 'Hula class (hotel, 11am)',
+    d4_n3: 'Book through Hyatt Regency Waikiki; ~1h. If you sweat a lot, <strong>zip back to the room for a quick rinse + light clothes</strong> before lunch (still hotel-adjacent)',
+    d4_t4: 'Lunch on your own (near Waikiki)',
+    d4_n4: 'Prefer <strong>takeout / quick bites</strong>—avoid long sit-down meals. Target <strong>done by ~1:15pm</strong> with ID/water ready; aim to be <strong>in an Uber toward Pearl Harbor by ~1:25–1:35pm</strong> (~35–45 min ride; buffer if you want on-site before <strong>2pm</strong>)',
+    d4_u1: 'Uber: Waikiki → Pearl Harbor, ~35–50 min / ~US$35 (Monday PM traffic can spike—leave earlier)',
+    d4_t5: 'Pearl Harbor National Memorial — afternoon',
+    d4_n5: 'USS Missouri is a must, ~1.5–2h. Site closes ~<strong>5pm</strong>; arriving <strong>before ~2pm</strong> is safe. Security is <strong>strict on large bags</strong>—small bag + water only. Arizona Memorial is a separate timed ticket and can add queue time; with a <strong>5:30pm Uosan</strong> reservation, <strong>prioritize Missouri</strong> first and only add Arizona if your ticket window + lines still feel comfortable. Open Mondays',
+    d4_u2: 'Uber: Pearl Harbor → Izakaya Uosan, ~20 min / ~US$25',
+    d4_t6: 'Dinner: Izakaya Uosan',
+    d4_n6: '1221 Kapiolani Blvd, opens 5pm (closed Wed). Uni truffle butter rice + foie gras daikon. Book first seating. Call (808) 200-5077',
+    d4_t7: 'Uber back to Waikiki — last evening',
+    d4_n7: 'Stroll Kalakaua Ave or head straight to the hotel',
+    d5_title: 'Apr 21 (Tue) — Check-out + flight home',
+    d5_sub: 'Flight 12:10pm · departure day centers on <strong>checkout + airport buffer</strong> · aim for hotel pickup ~9:40am to HNL',
+    d5_ml1: '☕ Morning — coffee / light bite near the hotel (before checkout)',
+    d5_ml2: '✈ Departure — airport snack / grab-and-go (timing depends on your flight)',
+    route_d5: '<span class="route-stop">Hotel checkout</span><span class="route-arrow">→</span><span class="route-stop">HNL</span>',
+    d5_uber_total: 'Uber/Lyft ballpark: ~US$28–42 (one hotel→HNL ride; keep departure day simple)',
+    d5_t1: 'Final morning · coffee + pack & check out',
+    d5_n1: 'Leave margin for <strong>checkout, luggage, and TSA</strong>; avoid extra long drives. For ocean photos, the hotel lanai or a short Waikiki sand walk is enough.',
+    d5_u1: 'Uber: hotel → HNL (~25–40 min / ~US$28–42 depending on traffic)',
+    d5_t3: 'Uber to airport — flight 12:10pm',
+    d5_n3: 'Domestic: allow 2h+ at HNL; traffic varies—9:40am pickup is safer. Aloha 🤙',
+    rost_title: 'Restaurant overview',
+    rost_1: '<strong>D1 lunch · Ala Moana (skip tonkatsu)</strong><br><strong>Goma Tei Ramen</strong> Ste 1215 · ramen / tantan / udon · often ~US$14–22 bowls (verify menu)<br><a href="https://www.gomatei.com/" target="_blank" rel="noopener">gomatei.com</a><br><strong>Kamukura</strong> · Level 2 The Lanai food hall · ramen/bento · opens early<br><a href="https://www.google.com/maps/search/?api=1&query=Kamukura+Ramen+Ala+Moana+Center" target="_blank" rel="noopener">Find Kamukura (Google Maps)</a><br><span class="tag chase-pts-tag">CHASE pay</span><span class="tag walkin-tag">Walk-in / queue</span>',
+    rost_2: '<strong>Mauka Warriors Luau — KOA Classic</strong><br>Apr 17 (Fri) ~5:00–9:00pm · booking <strong>#343484830</strong> · pickup <strong>4:15pm</strong> Waikiki Beach Marriott (Paoakalani entrance)<br>Closed Mon/Sat · maukawarriorsluau.com<br><span class="tag res-web-tag">Book online</span><span class="tag chase-pts-tag">CHASE pay</span>',
+    rost_3: '<strong>KCC Farmers Market</strong><br>Apr 18 (Sat) breakfast<br>Sat only 7:30–11am<br><span class="tag walkin-tag">Walk-in / queue</span><span class="tag chase-pts-tag">CHASE pay</span>',
+    rost_leo: '<strong>Leonard\'s Bakery</strong><br>Apr 18 (Sat) lunch takeout option<br>Kapahulu · malasadas<br><span class="tag walkin-tag">Walk-in / queue</span><span class="tag chase-pts-tag">CHASE pay</span>',
+    rost_byodo: '<strong>Byodo-In Temple ☸</strong><br>Apr 19 (Sun) afternoon · after Kualoa UTV<br>Valley of the Temples · Kaneohe / Ahuimanu · on-site admission<br><a href="https://www.byodo-in.com/" target="_blank" rel="noopener">byodo-in.com</a>',
+    rost_8: '<strong>Yoshitsune</strong><br>Apr 19 (Sun) dinner<br>From 5:30pm · walkable · <strong>☎ (808) 926-5616</strong> or <a href="https://autoreserve.com/restaurants/mcPpL8hoLjo6AUtD3y2p" target="_blank" rel="noopener">AutoReserve</a> (verify with restaurant)<br><span class="tag res-web-tag">Book online</span><span class="tag res-phone-tag">Phone res.</span><span class="tag chase-pts-tag">CHASE pay</span>',
+    rost_9: '<strong>Honolulu Skewer House</strong><br>Apr 18 (Sat) night<br>5–11pm · 567 Kapahulu Ave · call <strong>☎ (808) 888-8680</strong><br><span class="tag res-phone-tag">Phone res.</span><span class="tag chase-pts-tag">CHASE pay</span>',
+    rost_10: '<strong>Nalu Health Bar</strong><br>Apr 20 (Mon) breakfast<br>226 Lewers St · opens 7am · walkable<br><span class="tag walkin-tag">Walk-in / queue</span><span class="tag chase-pts-tag">CHASE pay</span>',
+    rost_11: '<strong>Izakaya Uosan ★</strong><br>Apr 20 (Mon) dinner<br>From 5pm · phone required ☎ (808) 200-5077<br><span class="tag res-phone-tag">Phone res.</span><span class="tag chase-pts-tag">CHASE pay</span>',
+    surf_title: 'Surf schools (pick one · Sat D2 · meet on Waikiki Beach · ~1–2pm)',
+    surf_pick: 'The three options are <strong>Mickey Surf School</strong>, <strong>Moku Hawaii</strong>, and <strong>Hawaii Surfing Academy (HSA)</strong>—all meet on <strong>Waikiki Beach</strong> within walking distance of the hotel (follow each booking email’s meeting pin). <strong>Fits Sat D2</strong>: KCC + Diamond are southeast; after lunch you’re back in Waikiki, and the 1–2pm lesson stays on the <strong>same hotel-side beach axis</strong>. <strong>Top pick: Mickey</strong>—lessons often include free video + stills (best souvenir ROI). <strong>Moku</strong>—fun coach energy; optional paid photo add-on. <strong>HSA</strong>—often bundles gear + photos but is usually the most expensive—confirm on each official site.',
+    surf_mickey: 'Group lessons often include free video + photos<br>Best first-timer pick if you want footage<br>Book Sat 1pm / 2pm slot',
+    surf_moku: 'Sky / Ray coaches; relaxed vibe<br>Optional add-on shoot (~US$100/hr tier)<br>Good flexibility for private/semi-private',
+    surf_hsa: 'Often includes water shoes + rash guard<br>Photos included · small ratios common<br>Often US$200+ / 2hr—verify website',
+    tips_title: 'Trip notes',
+    tip_1: '· Day 1 (17th): HNL → Ala Moana lunch (timeline uses <strong>12:00</strong> as reference—if immigration is slow, shift everything later) → Hyatt check-in <strong>1:45</strong> → leave for Marriott pickup by <strong>3:10pm</strong> (<strong>4:15pm</strong> shuttle departs) → Mauka <strong>KOA Classic</strong> (5:00–9:00pm) → rest ~9:30pm',
+    tip_2: '· Apr 18: KCC Sat only; Diamond reservation; light Waikiki lunch; surf 1pm/2pm then <strong>hotel shower + dry clothes</strong> before sunset / Skewer; Apr 21—prioritize airport time',
+    tip_3: '· Apr 19: <strong>2-Hour UTV Ride Along</strong>—booked <strong>10:15am</strong> departure with <strong>9:30am Ticket Office</strong> check-in (45 min early) + matching <strong>photo ID</strong>; do the online <strong>waiver</strong> ahead of time if you can. Still works with a short Lanikai stop, but <strong>leave Kailua by ~8:25am</strong> for Kualoa; for more slack pick another site time. <strong>Byodo-In</strong> between UTV and turtles (on-site admission—check <a href="https://www.byodo-in.com/" target="_blank" rel="noopener">byodo-in.com</a> hours); keep Laniakea turtle stop short if tired; Yoshitsune dinner; one-day rental',
+    tip_4: '· Apr 20: Izakaya Uosan—phone (808) 200-5077; closed Wed',
+    tip_5: '· No car Apr 17–18 & Apr 20–21; Apr 19 North Shore one-day rental, return same night',
+    tip_6: '· Day-1 lunch at <strong>Ala Moana</strong>: if you dislike pork-katsu sets, use <strong>Goma Tei</strong> noodles or <strong>Kamukura</strong> on The Lanai (see restaurant roster). Evening <strong>Mauka KOA Classic</strong> is booked (#343484830)—rear section on ticket, pickup 4:15pm Marriott Paoakalani per confirmation.',
+    tip_7: '· <strong>Flow rule</strong>: after water sports or a sweaty hike/hula block, default to <strong>hotel shower + change</strong> before malls, fine dining, or long A/C—D2 surf always; D3 if you swam or are sandy, same after car return before izakaya',
+    pay_pace_title: 'Pace & booking overview',
+    pay_pace_block: '<p style="margin:0 0 8px;"><strong>Note:</strong> tickets, reservations, and prices below are handled directly on each official site (or on-site) as listed.</p><p style="margin:0;"><strong>Is it still “a lot”?</strong> <strong>Sat Apr 18</strong> is an <strong>early, full day</strong> (KCC + Diamond Head + surf + Skewer). <strong>Sun Apr 19</strong> is <strong>long driving</strong>: Lanikai + Kualoa UTV + <strong>Byodo-In</strong> (windward, after UTV) + a shorter North Shore turtle stop + Yoshitsune. <strong>Doable</strong> if you sleep enough; if you need slack on-site, shorten <strong>temple time</strong> or <strong>turtle time</strong> first—not Mauka or UTV.</p>',
+    pay_book_master_title: 'Every ticket / reservation / waitlist — exact product names & sites',
+    pay_book_master_block: '<table><thead><tr><th>Type</th><th>When</th><th>Activity</th><th>Exact product (don’t mix up)</th><th>Where to book</th><th>Ballpark</th></tr></thead><tbody><tr><td><span class="badge-alt badge-alt--care">Required</span></td><td>Apr 17 pm</td><td>Mauka Warriors Luau</td><td><strong>KOA — Classic Package</strong>: rear section + shell lei + drink tickets per age rules + pre-show + Polynesian buffet + main show. <strong>Not</strong> SHOW ONLY. Pick <strong>With Transportation</strong> from Waikiki if needed (~<strong>US$30/p</strong>)</td><td><a href="https://www.maukawarriorsluau.com/reservations/" target="_blank" rel="noopener">maukawarriorsluau.com/reservations</a></td><td>~<strong>US$139+</strong> adult (verify checkout); shuttle extra</td></tr><tr><td><span class="badge-alt badge-alt--talk">Suggested</span></td><td>Apr 17 lunch</td><td>Japanese lunch</td><td>Mall noodles <strong>without</strong> a heavy tonkatsu teishoku: <strong>Goma Tei Ramen</strong> (Ste 1215; tantan/shoyu/udon—many bowls ~US$14–22 before tax/tip) or <strong>Kamukura</strong> (The Lanai; ramen/bento; opens early)</td><td><a href="https://www.gomatei.com/" target="_blank" rel="noopener">gomatei.com</a> · <a href="https://www.google.com/maps/search/?api=1&query=Kamukura+Ramen+Ala+Moana+Center" target="_blank" rel="noopener">Kamukura (maps)</a></td><td>~<strong>US$14–25pp</strong> typical noodle meal</td></tr><tr><td><span class="badge-alt badge-alt--care">Required</span></td><td>Apr 18 am</td><td>Diamond Head</td><td><strong>Diamond Head State Monument — Summit Trail</strong> timed entry (<strong>not</strong> a random third-party “shuttle only” product unless you choose to switch)</td><td><a href="https://www.recreation.gov/ticket/facility/300005" target="_blank" rel="noopener">recreation.gov</a></td><td><strong>US$5</strong> + fee</td></tr><tr><td><span class="badge-alt badge-alt--care">Required</span></td><td>Apr 18 pm</td><td>Surf</td><td>Meet on <strong>Waikiki Beach</strong> (walking distance)—pick ONE: <strong>Mickey Surf School</strong>, <strong>Moku Hawaii</strong>, or <strong>Hawaii Surfing Academy (HSA)</strong>. Book that school’s <strong>Group Lesson</strong> for <strong>Sat 1pm or 2pm</strong>. <strong>Top pick: Mickey</strong> (often includes free video + photos—best souvenir value).</td><td><a href="https://www.mickeysurfschool.com/" target="_blank" rel="noopener">Mickey</a> · <a href="https://www.mokuhawaii.com/" target="_blank" rel="noopener">Moku</a> · <a href="https://www.hawaiisurfingacademy.com/" target="_blank" rel="noopener">HSA</a></td><td><strong>US$75–200+pp</strong></td></tr><tr><td><span class="badge-alt badge-alt--talk">Strongly rec.</span></td><td>Apr 18 night</td><td>Skewer</td><td>Table reservation by phone</td><td>Google Maps “Honolulu Skewer House”</td><td>~<strong>US$80pp</strong> est.</td></tr><tr><td><span class="badge-alt badge-alt--care">Required</span></td><td>Apr 19</td><td>Rental car</td><td>Waikiki same-day pickup/return, prepaid</td><td><a href="https://www.enterprise.com/" target="_blank" rel="noopener">Enterprise</a> / <a href="https://www.budget.com/" target="_blank" rel="noopener">Budget</a> / <a href="https://www.alamo.com/" target="_blank" rel="noopener">Alamo</a></td><td><strong>US$60–95/day</strong>+tax/ins</td></tr><tr><td><span class="badge-alt badge-alt--care">Required</span></td><td>Apr 19 tour <strong>10:15am</strong> HST (<strong>Ticket Office check-in by 9:30am</strong>—45 min early; confirm email). Other daily times on site—verify live.</td><td>Kualoa UTV</td><td><strong>2-Hour UTV Ride Along Tour</strong> (~2hr, guide drives UTV Raptor—match this exact tour name on kualoa.com). <strong>Do not book</strong> Hollywood Movie Sites, Secret Island, solo ATV, zipline—same ranch, different products. This page’s timeline uses <strong>9:30am check-in</strong> / <strong>10:15am departure</strong>; slide later stops if you pick another slot.</td><td><a href="https://www.kualoa.com/experiences/tours" target="_blank" rel="noopener">kualoa.com/experiences/tours</a></td><td><strong>Paid ~US$325.58</strong> (2 adults—receipt: subtotal ~US$309.90 + taxes/fees ~US$15.68)</td></tr><tr><td><span class="badge-alt badge-alt--talk">Optional</span></td><td>Apr 19 pm</td><td>Byodo-In Temple</td><td><strong>Valley of the Temples</strong> memorial-park admission (includes the Japanese temple replica). Pay on site; <strong>not</strong> another Oʻahu “temple tour” product.</td><td><a href="https://www.byodo-in.com/" target="_blank" rel="noopener">byodo-in.com</a> (hours often ~8:30am–5pm—verify)</td><td>often ~<strong>US$5–10pp</strong></td></tr><tr><td><span class="badge-alt badge-alt--talk">Strongly rec.</span></td><td>Apr 19 dinner</td><td>Yoshitsune</td><td>Dinner reservation</td><td>Phone / Google listing</td><td>À la carte</td></tr><tr><td><span class="badge-alt badge-alt--talk">Recommended</span></td><td>Apr 20 11am</td><td>Hula</td><td>Hyatt guest <strong>cultural / hula experience</strong> (exact title on hotel schedule)</td><td><a href="https://www.hyatt.com/hotel/hawaii/hyatt-regency-waikiki-beach-resort-and-spa/hnlrw" target="_blank" rel="noopener">Hyatt Regency Waikiki</a> front desk / activities</td><td>Hotel pricing</td></tr><tr><td><span class="badge-alt badge-alt--care">Required</span></td><td>Apr 20 pm</td><td>USS Missouri</td><td><strong>Battleship Missouri Memorial</strong> ticket (<strong>separate</strong> from Arizona boat)</td><td><a href="https://www.visitpearlharbor.org/battleship-missouri/" target="_blank" rel="noopener">visitpearlharbor.org</a></td><td>~<strong>US$35–42</strong></td></tr><tr><td><span class="badge-alt badge-alt--talk">Optional</span></td><td>Apr 20</td><td>Arizona boat</td><td><strong>USS Arizona Memorial</strong> program ticket on recreation.gov (very limited)</td><td><a href="https://www.recreation.gov/" target="_blank" rel="noopener">recreation.gov</a> (search Arizona)</td><td>often ~<strong>US$1</strong></td></tr><tr><td><span class="badge-alt badge-alt--care">Required</span></td><td>Apr 20 dinner</td><td>Izakaya Uosan</td><td>Phone reservation—no online booking</td><td>☎ <strong>(808) 200-5077</strong></td><td>High-end à la carte</td></tr></tbody></table>',
+    pay_table_title: 'Paid activities: where to book & ballpark prices',
+    pay_table_foot: 'US$ ranges are planning estimates—<strong>re-check each official site before travel</strong>; tax, tips & transfers are extra.',
+    pay_table_block: '<table><thead><tr><th>Item</th><th>Exact product to book</th><th>Official / booking</th><th>Ballpark</th><th>Deals / tips</th></tr></thead><tbody><tr><td>Mauka Warriors Luau</td><td>Fri · <strong>KOA Classic Package</strong> (full dinner + show); add Waikiki transfer if needed</td><td><a href="https://www.maukawarriorsluau.com/reservations/" target="_blank" rel="noopener">maukawarriorsluau.com/reservations</a></td><td>~<strong>US$139+</strong> adult; shuttle ~<strong>US$30/p</strong> if bundled</td><td>Do not book show-only</td></tr><tr><td>D1 Japanese lunch</td><td><strong>Goma Tei</strong> ramen/udon (Ste 1215) or <strong>Kamukura</strong> on The Lanai—not a ticket; lighter than a big katsu set before Mauka buffet</td><td><a href="https://www.gomatei.com/" target="_blank" rel="noopener">gomatei.com</a> · Google “Kamukura Ala Moana”</td><td><strong>US$14–25pp</strong> ballpark noodles</td><td>Check Goma Tei for happy-hour notes; Friday queues possible</td></tr><tr><td>Diamond Head</td><td><strong>Summit Trail</strong> timed entry + parking</td><td><a href="https://www.recreation.gov/ticket/facility/300005" target="_blank" rel="noopener">recreation.gov</a></td><td><strong>US$5</strong> + small fee</td><td>No Groupon; Sat AM slots tight</td></tr><tr><td>KCC Market</td><td>Food only</td><td><a href="https://www.kapiolani.hawaii.edu/event/kcc-farmers-market/" target="_blank" rel="noopener">KCC Farmers Market</a></td><td><strong>US$8–25</strong> food</td><td>Free entry; closes 11am</td></tr><tr><td>Surf lesson</td><td>Waikiki Beach group lesson <strong>Sat 1pm or 2pm</strong>—pick one: <strong>Mickey Surf School</strong>, <strong>Moku Hawaii</strong>, <strong>Hawaii Surfing Academy (HSA)</strong>. <strong>Top pick Mickey</strong> for free video + photos (best keepsake ROI).</td><td><a href="https://www.mickeysurfschool.com/" target="_blank" rel="noopener">Mickey</a> · <a href="https://www.mokuhawaii.com/" target="_blank" rel="noopener">Moku</a> · <a href="https://www.hawaiisurfingacademy.com/" target="_blank" rel="noopener">HSA</a></td><td><strong>US$75–200+pp</strong> varies</td><td>Moku add-on photo ~US$100/hr; HSA often pricier—verify each site’s “Group Lesson” product</td></tr><tr><td>Honolulu Skewer House</td><td>Reserve Sat night</td><td>Google Maps / phone</td><td><strong>~US$80pp</strong> est.</td><td>Rare coupons</td></tr><tr><td>Kualoa UTV</td><td><strong>2-Hour UTV Ride Along Tour</strong> (~2hr; guide drives UTV Raptor; not Hollywood tour)</td><td><a href="https://www.kualoa.com/experiences/tours" target="_blank" rel="noopener">kualoa.com/experiences/tours</a></td><td><strong>~US$325.58</strong> paid (2 adults—subtotal ~US$309.90 + taxes/fees ~US$15.68)</td><td>This itinerary: <strong>10:15am</strong> tour = <strong>9:30am Ticket Office</strong> check-in (45 min). Other daily times on site—verify. <strong>Secret Island / Movie Tour / ATV</strong> are all <strong>≠</strong> this</td></tr><tr><td>Byodo-In (D3)</td><td><strong>Valley of the Temples</strong> gate ticket; slotted <strong>after Kualoa UTV</strong>, before Laniakea turtles (Kaneohe area)</td><td><a href="https://www.byodo-in.com/" target="_blank" rel="noopener">byodo-in.com</a> · Google “Byodo-In Temple Oahu”</td><td>often <strong>US$5–10pp</strong> on site</td><td>Dress respectfully; budget ~40min + drives; trim turtles if tight</td></tr><tr><td>1-day car</td><td>Waikiki pickup/drop Apr 19</td><td><a href="https://www.enterprise.com/" target="_blank" rel="noopener">Enterprise</a> / <a href="https://www.budget.com/" target="_blank" rel="noopener">Budget</a> / <a href="https://www.alamo.com/" target="_blank" rel="noopener">Alamo</a></td><td><strong>US$60–95/day</strong>+tax/ins</td><td>Prepay, AAA, Costco Travel compare</td></tr><tr><td>Yoshitsune</td><td>Dinner reserve</td><td>Phone / Google</td><td>À la carte</td><td>No standard discount</td></tr><tr><td>Nalu Health Bar</td><td>Breakfast bowls</td><td><a href="https://www.naluhealthbar.com/" target="_blank" rel="noopener">naluhealthbar.com</a></td><td><strong>US$12–22</strong></td><td>Watch IG promos</td></tr><tr><td>Hyatt hula</td><td>Hotel cultural class</td><td><a href="https://www.hyatt.com/hotel/hawaii/hyatt-regency-waikiki-beach-resort-and-spa/hnlrw" target="_blank" rel="noopener">Hyatt Regency Waikiki</a></td><td>Hotel pricing</td><td>Packages sometimes bundle</td></tr><tr><td>USS Missouri</td><td>Battleship ticket</td><td><a href="https://www.visitpearlharbor.org/battleship-missouri/" target="_blank" rel="noopener">visitpearlharbor.org</a></td><td><strong>~US$35–42</strong> adult</td><td>Separate from Arizona boat—buy ahead</td></tr><tr><td>Arizona Memorial</td><td>Optional boat lottery/ticket</td><td><a href="https://www.recreation.gov/" target="_blank" rel="noopener">recreation.gov</a></td><td>often <strong>~US$1</strong> fee</td><td>Hard to get; can skip</td></tr><tr><td>Izakaya Uosan</td><td>Mon first seating</td><td>Phone <strong>(808) 200-5077</strong></td><td>High-end omakase-style</td><td>Closed Wed; phone only</td></tr></tbody></table>',
+    bk_all_title: 'Book ahead (sooner is better)',
+    bk_1: '<strong>Kualoa 2-Hour UTV Ride Along</strong> <span class="bk-tag-urgent">Confirm details</span><br>kualoa.com · Sun <strong>10:15am</strong> departure · <strong>9:30am</strong> Ticket Office check-in · order <strong>KRHI012604130550</strong> · paid ~<strong>US$325.58</strong>',
+    bk_2: '<strong>Mauka KOA Classic</strong> <span class="bk-tag-urgent">Confirm details</span><br>Booking <strong>#343484830</strong> · Fri ~5:00pm · pickup <strong>4:15pm</strong> Waikiki Beach Marriott (Paoakalani entrance) · <strong>not</strong> show-only',
+    bk_3: '<strong>Izakaya Uosan</strong> <span class="bk-tag-urgent">Phone only</span><br>☎ (808) 200-5077 · Mon dinner · no DMs',
+    bk_5: '<strong>Diamond Head hike</strong> <span class="bk-tag-soon">Reservation</span><br>recreation.gov (Summit Trail) · Sat 9am · US$5/person + fee',
+    bk_6: '<strong>Surf lesson</strong> <span class="bk-tag-soon">Book ahead</span><br>Mickey / Moku / HSA · Waikiki Beach meet · Sat 1–2pm · top pick Mickey',
+    bk_skew: '<strong>Honolulu Skewer House</strong> <span class="bk-tag-soon">Reserve</span><br>567 Kapahulu Ave · Sat evening · ☎ <strong>(808) 888-8680</strong>',
+    bk_7: '<strong>Hula class</strong><br>Hyatt Regency Waikiki · Mon 11am',
+    bk_8: '<strong>Yoshitsune</strong><br>Apr 19 (Sun) dinner · call ahead',
+    bk_9: '<strong>Pearl Harbor</strong> · <strong>USS Missouri</strong> ticket <span class="bk-tag-soon">buy ahead</span><br>visitpearlharbor.org/battleship-missouri · Arizona boat optional · recreation.gov',
+    bk_10: '<strong>Apr 19 rental car</strong><br>Enterprise / Budget / Alamo Waikiki · confirm <strong>7:00am</strong> pickup',
+    bk_note: 'Full matrix: Trip tab → “Every ticket / reservation”. D1 lunch: follow the restaurant’s line/reservation rules. Mauka: <strong>KOA Classic</strong> full-package ticket.',
+    pack_collab_title: 'Packing list (Google Doc)',
+    pack_collab_intro: 'The list lives in the Google Doc below. The embed is read-only preview; use the button to open and edit (sharing permissions apply).',
+    pack_doc_setup: 'If nothing appears: share the doc, then set PACK_DOC_EDIT_URL and PACK_DOC_PREVIEW_URL in this file’s &lt;script&gt;, and redeploy.',
+    pack_doc_btn: 'Open in Google Docs',
+    pack_doc_iframe_note: 'If the preview looks wrong, use the button above—some browsers restrict embedded docs.'
+  };
+
+  function captureZh() {
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      if (el.dataset.zhSaved) return;
+      el.dataset.zhSaved = '1';
+      if (el.tagName === 'TITLE') {
+        el.dataset.zh = el.textContent;
+        return;
+      }
+      el.dataset.zh = el.innerHTML;
+    });
+    document.querySelectorAll('[data-i18n-aria]').forEach(function (el) {
+      if (el.dataset.zhAriaSaved) return;
+      el.dataset.zhAriaSaved = '1';
+      el.dataset.zhAria = el.getAttribute('aria-label') || '';
+    });
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function (el) {
+      if (el.dataset.zhPhSaved) return;
+      el.dataset.zhPhSaved = '1';
+      el.dataset.zhPh = el.getAttribute('placeholder') || '';
+    });
+  }
+
+  function applyLang(lang) {
+    var isEn = lang === 'en';
+    document.documentElement.lang = isEn ? 'en' : 'zh-Hans';
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n');
+      var zh = el.dataset.zh;
+      var text = isEn ? (I18N_EN[key] != null ? I18N_EN[key] : zh) : zh;
+      if (el.tagName === 'TITLE') {
+        el.textContent = text;
+        document.title = text;
+        return;
+      }
+      el.innerHTML = text;
+    });
+    document.querySelectorAll('[data-i18n-aria]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n-aria');
+      var zhA = el.dataset.zhAria;
+      el.setAttribute('aria-label', isEn ? (I18N_EN[key] != null ? I18N_EN[key] : zhA) : zhA);
+    });
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n-placeholder');
+      var zhP = el.dataset.zhPh;
+      el.placeholder = isEn ? (I18N_EN[key] != null ? I18N_EN[key] : zhP) : zhP;
+    });
+    var bZh = document.getElementById('lang-zh');
+    var bEn = document.getElementById('lang-en');
+    if (bZh && bEn) {
+      bZh.classList.toggle('is-active', !isEn);
+      bEn.classList.toggle('is-active', isEn);
+      bZh.setAttribute('aria-pressed', !isEn ? 'true' : 'false');
+      bEn.setAttribute('aria-pressed', isEn ? 'true' : 'false');
+    }
+    try {
+      localStorage.setItem(STORAGE_KEY, lang);
+    } catch (e) {}
+    loadChecks();
+    initPackDoc();
+    initMaukaLinks();
+    initKualoaLinks();
+  }
+
+  function loadChecks() {
+    try {
+      var raw = localStorage.getItem(CHECK_KEY);
+      var o = raw ? JSON.parse(raw) : {};
+      document.querySelectorAll('[data-check-key]').forEach(function (el) {
+        el.checked = !!o[el.getAttribute('data-check-key')];
+      });
+    } catch (e) {}
+  }
+
+  function saveCheck(key, on) {
+    try {
+      var raw = localStorage.getItem(CHECK_KEY);
+      var o = raw ? JSON.parse(raw) : {};
+      o[key] = on;
+      localStorage.setItem(CHECK_KEY, JSON.stringify(o));
+    } catch (e) {}
+  }
+
+  function initPackDoc() {
+    var editUrl = PACK_DOC_EDIT_URL && String(PACK_DOC_EDIT_URL).replace(/^\s+|\s+$/g, '');
+    var previewUrl = PACK_DOC_PREVIEW_URL && String(PACK_DOC_PREVIEW_URL).replace(/^\s+|\s+$/g, '');
+    var nActive = document.getElementById('pack-doc-active');
+    var nOpen = document.getElementById('pack-doc-open');
+    var nIf = document.getElementById('pack-doc-if');
+    var nHint = document.getElementById('pack-doc-setup-hint');
+    if (editUrl && nActive && nOpen) {
+      nActive.hidden = false;
+      nOpen.href = editUrl;
+      if (nHint) nHint.hidden = true;
+      if (nIf && PACK_DOC_USE_IFRAME && previewUrl) {
+        nIf.src = previewUrl;
+        nIf.hidden = false;
+      }
+    }
+  }
+
+  function initMaukaLinks() {
+    var raw = typeof MAUKA_TICKETS_URL === 'string' ? MAUKA_TICKETS_URL : '';
+    var u = raw.replace(/^\s+|\s+$/g, '');
+    document.querySelectorAll('a[data-mauka-tickets]').forEach(function (a) {
+      if (u) {
+        a.href = u;
+        a.removeAttribute('hidden');
+        a.onclick = null;
+      } else {
+        a.setAttribute('hidden', '');
+        a.setAttribute('href', '#');
+        a.onclick = function (e) { e.preventDefault(); };
+      }
+    });
+    document.querySelectorAll('.mauka-tickets-hint').forEach(function (p) {
+      if (u) {
+        p.setAttribute('hidden', '');
+      } else {
+        p.removeAttribute('hidden');
+      }
+    });
+  }
+
+  function initKualoaLinks() {
+    var raw = typeof KUALOA_WAIVER_URL === 'string' ? KUALOA_WAIVER_URL : '';
+    var u = raw.replace(/^\s+|\s+$/g, '');
+    document.querySelectorAll('a[data-kualoa-waiver]').forEach(function (a) {
+      if (u) {
+        a.href = u;
+        a.removeAttribute('hidden');
+        a.onclick = null;
+      } else {
+        a.setAttribute('hidden', '');
+        a.setAttribute('href', '#');
+        a.onclick = function (e) { e.preventDefault(); };
+      }
+    });
+    document.querySelectorAll('.kualoa-waiver-hint').forEach(function (p) {
+      if (u) {
+        p.setAttribute('hidden', '');
+      } else {
+        p.removeAttribute('hidden');
+      }
+    });
+  }
+
+  document.body.addEventListener('change', function (e) {
+    var t = e.target;
+    if (t.matches && t.matches('input[type="checkbox"][data-check-key]')) {
+      saveCheck(t.getAttribute('data-check-key'), t.checked);
+    }
+  });
+
+  var tabs = document.querySelectorAll('.tab-btn');
+  var pIt = document.getElementById('panel-itinerary');
+  var pBk = document.getElementById('panel-bookings');
+  var pPk = document.getElementById('panel-packing');
+  tabs.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var id = btn.getAttribute('data-tab');
+      tabs.forEach(function (b) {
+        var on = b.getAttribute('data-tab') === id;
+        b.classList.toggle('is-active', on);
+        b.setAttribute('aria-selected', on ? 'true' : 'false');
+      });
+      if (pIt) pIt.hidden = id !== 'itinerary';
+      if (pBk) pBk.hidden = id !== 'bookings';
+      if (pPk) pPk.hidden = id !== 'packing';
+    });
+  });
+
+  captureZh();
+  loadChecks();
+
+  var saved = 'zh';
+  try {
+    saved = localStorage.getItem(STORAGE_KEY) || 'zh';
+  } catch (e) {}
+  if (saved === 'en') {
+    applyLang('en');
+  }
+
+  initPackDoc();
+  initMaukaLinks();
+  initKualoaLinks();
+
+  var bZh = document.getElementById('lang-zh');
+  var bEn = document.getElementById('lang-en');
+  if (bZh) bZh.addEventListener('click', function () { applyLang('zh'); });
+  if (bEn) bEn.addEventListener('click', function () { applyLang('en'); });
+})();
+</script>
+</body>
+</html>
+zh'); });
+  if (bEn) bEn.addEventListener('click', function () { applyLang('en'); });
+})();
+</script>
+</body>
+</html>
