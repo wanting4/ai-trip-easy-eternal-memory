@@ -10,6 +10,9 @@ export default function Home() {
       </p>
       <ul>
         <li>
+          <Link href="/quiz">旅行风格测验</Link>
+        </li>
+        <li>
           <Link href="/api/health">GET /api/health</Link> — smoke test for Vercel
         </li>
       </ul>
